@@ -5,9 +5,9 @@
 .main{
     width: 100%; height: 10vh;
     display: flex;
-    justify-content: right;
-    align-items: center;
-    background-color: black;
+    justify-content: center;
+    align-items: right;
+    background-color: darkgrey;
 }
 .nav ol{
     width: 500px; display: flex;
@@ -40,9 +40,7 @@
 
 
 p {
-    color: red;
-    /*width: 500px;
-    border: 1px solid black;*/
+    color:blue;
 }
 
 button {
