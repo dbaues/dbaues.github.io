@@ -4,7 +4,7 @@ p {
     border: 1px solid black;*/
 }
 
-.button {
+button {
     background-color: #f44336; /* Red */
     border: none;
     color: white;
