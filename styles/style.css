@@ -1,3 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.main{
+    width: 100%; height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+.nav ol{
+    width: 500px; display: flex;
+    justify-content: space-between;
+}
+.nav ol li{
+    padding: 15px 20px; position: relative;
+    cursor: pointer; overflow: hidden;
+}
+.nav ol li::before{
+    content: ""; position: absolute;
+    bottom: 0; left: 0;
+    width: 100%; height: 2px;
+    background: cyan;
+    transform: translateX(-100%);
+    transition: all 0.4s;
+}
+.nav ol li:hover::before{
+    transform: translateX(0%);
+}
+.nav ol li a{
+    color: white; text-decoration: none;
+    font-size: 1.2rem; letter-spacing: 0.1rem;
+    transition: all 0.4s;
+}
+.nav ol li:hover a{
+    color: cyan;
+    text-shadow: -1px -1px 10px cyan, 1px 1px 10px cyan;
+}
+
+
 p {
     color: red;
     /*width: 500px;
