@@ -5,7 +5,7 @@
 .main{
     width: 100%; height: 10vh;
     display: flex;
-    justify-content: center;
+    justify-content: right;
     align-items: center;
     background-color: black;
 }
