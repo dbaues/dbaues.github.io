@@ -1,9 +1,23 @@
-*{
-    margin: 0;
-    padding: 0;
+*{ /* Browser Reset */
+    margin: 10px;
+    padding: 7px;
+    font-family: "Arial";
 }
 .h1{
     color: cyan;
+}
+.header {
+    margin: 0px;
+    padding: 0px;
+    display: grid;
+    width: 100%;
+    position: relative;
+    grid-template-columns: 1fr 1fr;
+}
+.body {
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
 }
 .logo {
     float: left;
@@ -13,25 +27,27 @@
     background-color:cyan;
     border-radius: 100px;
     text-align: center;
-    color: #fff;
+    color: darkgrey;
     font-size: 28px;
     font-weight: 800;
     margin-right: 8px;
     margin-top: 4px;
 }
+/* Top Navigation Buttons */
 .main{
+    margin: 5px; padding: 5px;
     width: 100%; height: 10vh;
     display: flex;
     justify-content: center;
-    align-items: right;
-    background-color: darkgrey;
+    align-items: center;
 }
 .nav ol{
-    width: 500px; display: flex;
+    width: 100%; display: flex;
+    border: cyan;
     justify-content: space-between;
 }
 .nav ol li{
-    padding: 15px 20px; position: relative;
+    padding: 5px 10px; position: relative;
     cursor: pointer; overflow: hidden;
 }
 .nav ol li::before{
@@ -46,27 +62,36 @@
     transform: translateX(0%);
 }
 .nav ol li a{
-    color: white; text-decoration: none;
-    font-size: 1.2rem; letter-spacing: 0.1rem;
+    color: black; text-decoration: none;
+    font-size: 14px; letter-spacing: 0.1rem;
     transition: all 0.4s;
 }
 .nav ol li:hover a{
     color: cyan;
-    text-shadow: -1px -1px 10px cyan, 1px 1px 10px cyan;
+    text-shadow: -1px -1px 10px black, 1px 1px 10px cyan;
 }
-
-
-p {
-    color:blue;
+/* Frosted Glass Effect */
+.container {
+    width: 80%;
+    margin: 0 auto;
+    height: 6rem;
+    box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2);
+    border-radius: 5px;
+    position: relative;
+    z-index: 1;
+    background: inherit;
+    overflow: hidden;
 }
-
-button {
-    background-color: #f44336; /* Red */
-    border: none;
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-  }
+.container:before {
+    content: "";
+    position: absolute;
+    background: inherit;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    box-shadow: inset 0 0 2000px rgba(255, 255, 255, .5);
+    filter: blur(10px);
+    margin: -20px;
+}
