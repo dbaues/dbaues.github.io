@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Paladins Champion Picker</title>
+    <link href="styles/style.css" rel="stylesheet">
+    <!-- <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Raleway"> -->
+    <link rel="icon" href="../res/gh_icon.png">
+</head>
+<body style="background-image: url('https://dbaues.github.io/res/bckgrnd.jpg');
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: 100% 100%;">
+    <!-- Top heading section -->
+    <div class="container">
+    <header id="db_header" class="header">
+        <!-- Name on top of Page. -->
+        <div class="text_label">
+            <a href="https://dbaues.github.io">
+                <div class="logo">DB</div>
+                <div class="name-text">Dan Bauer</div>
+            </a>
+        </div>
+        <!-- Buttons across the top. -->
+        <div class="main">
+            <div class="nav">
+                <ol>
+                    <!--<li><a href="test/">Paige</a></li>-->
+                    <li><a href="#">About</a></li>
+                    <li><a href="https://dbaues.github.io/res/gh_icon.png" download="dbicon.png">Resume</a></li>
+                    <li><a href="https://dbaues.github.io/contact.html">Contact</a></li>
+                    <!-- Add target="_blank" for opening in new tab. -->
+                    <li><a href="https://github.com/dbaues">Github</a></li>
+                </ol>
+            </div>
+        </div>
+    </header>
+    </div>
+    <!-- Creates a gap -->
+    <br><br>
+    <!-- Content section -->
+    <div class="content_container">
+        <div class="main2">
+            <h3>Paladins Champion Picker</h3>
+        </div>
+        <div class="dl_link">
+            <button class="btn" onclick="randomizeChamp()">Get Random</button>
+            <!--<a href="doc_protected.pdf" download="Dear Paige.pdf">Download!</a>-->
+        </div>
+        <div class="champ_gen" style="text-align: center">
+            <p id="p_test" style="text-align: center"> </p>
+            <img id="champ_image" src="res/champion%20icons/androxus.jpg">
+        </div>
+    </div>
+
+
+    <!-- Messing around with JS -->
+    <script>
+        // Link to cooler images.
+        // https://webcdn.hirezstudios.com/paladins/assets/carousel/furia.png
+
+
+        function getRandomInt(max) {
+            return Math.floor(Math.random() * max);
+        }
+
+        function getRandomChamp() {
+            switch (getRandomInt(7)) {
+                case 0:
+                    document.getElementById("p_test").innerHTML = "Sunday";
+                    document.getElementById("champ_image").src = "res/champion%20icons/corvus.jpg"
+                    break;
+                case 1:
+                    document.getElementById("p_test").innerHTML = "Monday";
+                    document.getElementById("champ_image").src = "res/champion%20icons/seris.jpg"
+                    break;
+                case 2:
+                    document.getElementById("p_test").innerHTML = "Tuesday";
+                    break;
+                case 3:
+                    document.getElementById("p_test").innerHTML = "Wednesday";
+                    break;
+                case 4:
+                    document.getElementById("p_test").innerHTML = "Thursday";
+                    break;
+                case 5:
+                    document.getElementById("p_test").innerHTML = "Friday";
+                    break;
+                case 6:
+                    document.getElementById("p_test").innerHTML = "Saturday";
+                    break;
+                default:
+                    document.getElementById("p_test").innerHTML = "Error";
+            }
+        }
+
+        function randomizeChamp(){
+            let champ = champions[getRandomInt(champions.length)];
+            document.getElementById("p_test").innerHTML = champ;
+            //document.getElementById("champ_image").src = "".concat("res/champion%20icons/", champ, ".jpg");
+
+            let img_url = "".concat("https://webcdn.hirezstudios.com/paladins/assets/carousel/", champ, ".png");
+            document.getElementById("champ_image").src = img_url;
+        }
+
+        const champions = ["androxus", "ash", "atlas", "barik", "bomb-king", "buck", "cassie", "corvus", "dredge", "drogoz", "evie", "fernando", "furia", "grohk", "grover", "imani", "inara", "io", "jenos", "khan", "kinessa", "koga", "lex", "lian", "maeve", "makoa", "maldamba", "moji", "octavia", "pip", "raum", "rei", "ruckus", "seris", "sha-lin", "skye", "strix", "talus", "terminus", "tiberius", "torvald", "tyra", "vatu", "viktor", "vivian", "vora", "willo", "yagorath", "ying", "zhin"];
+
+    </script>
+</body>
+
+
+
+<body>
+
+
+    <!-- Testing rolling images -->
+    <div class="roulette">
+        <div class="roulette-container">
+            <div class="wrap">
+                <div class="controller"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation options -->
+    <script>
+        // Goes Back to the Home Page.
+        document.write('<a href="' + document.referrer + '">Go Back</a>');
+    </script>
+    <br>
+    <a href="../index.html">Home Page</a>
+    <!-- Can also use <a href="javascript:history.back()">Home</a> -->
+</body>
+
+</html>

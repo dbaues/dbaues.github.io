@@ -1,12 +1,71 @@
 <!DOCTYPE html>
-<html>
-    <p>I'm sorry my handwriting is bad.</p>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dan Bauer - Test</title>
+    <!-- <link href="../styles/style.css" rel="stylesheet"> -->
+    <!-- <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Raleway"> -->
+    <link rel="icon" href="../res/gh_icon.png">
+</head>
+<body>
+    <h1>First Heading</h1>
+    <p>some random text...</p>
+    <br>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, laboriosam molestias! A ab accusamus ad aliquid amet blanditiis commodi consequatur et ex excepturi exercitationem expedita explicabo facilis fuga fugit inventore laudantium, maxime minus nesciunt nostrum officia placeat quae quaerat quisquam quod rerum soluta unde vel veniam voluptatum! Explicabo fugit, quidem!</p>
+    <hr>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad aliquam aperiam error eum eveniet, illo ipsum iusto laboriosam laudantium magni minus mollitia nemo obcaecati perspiciatis possimus praesentium qui quibusdam quidem quis quo reiciendis tempora totam ullam vel voluptatibus. Ex facilis nemo quisquam sit.</p>
     <!-- Downloads Password protected Letter Document -->
     <a href="doc_protected.pdf" download="Dear Paige.pdf">Download!</a>
-    <p></p>
+
+    <blockquote style="text-align: center"><b><strong>Lorem ipsum</strong> dolor sit amet</b>, consectetur adipisicing elit. Consequatur distinctio eum fugiat nihil nisi perspiciatis provident, quibusdam tenetur voluptas voluptatibus.</blockquote>
+
+    <!-- Messing around with JS -->
+
+    <button onclick="getRandomChamp()">Get Random</button>
+
+    <p id="p_test">Day</p>
+    <script>
+        function getRandomInt(max) {
+            return Math.floor(Math.random() * max);
+        }
+
+        function getRandomChamp() {
+            switch (getRandomInt(7)) {
+                case 0:
+                    document.getElementById("p_test").innerHTML = "Sunday";
+                    break;
+                case 1:
+                    document.getElementById("p_test").innerHTML = "Monday";
+                    break;
+                case 2:
+                    document.getElementById("p_test").innerHTML = "Tuesday";
+                    break;
+                case 3:
+                    document.getElementById("p_test").innerHTML = "Wednesday";
+                    break;
+                case 4:
+                    document.getElementById("p_test").innerHTML = "Thursday";
+                    break;
+                case 5:
+                    document.getElementById("p_test").innerHTML = "Friday";
+                    break;
+                case 6:
+                    document.getElementById("p_test").innerHTML = "Saturday";
+                    break;
+                default:
+                    document.getElementById("p_test").innerHTML = "Error";
+            }
+        }
+    </script>
+
+
+    <!-- Navigation options -->
     <script>
         // Goes Back to the Home Page.
         document.write('<a href="' + document.referrer + '">Go Back</a>');
     </script>
+    <br>
+    <a href="../index.html">Home Page</a>
     <!-- Can also use <a href="javascript:history.back()">Home</a> -->
+</body>
 </html>
