@@ -41,7 +41,7 @@
     <!-- Content section -->
     <div class="content_container">
         <div class="main2">
-            <h3>Paladins Champion Picker</h3>
+            <h3>Paladins Champion Picker [Version 1]</h3>
         </div>
         <div class="dl_link">
             <button class="btn" onclick="randomizeChamp()">Get Random</button>
@@ -96,7 +96,24 @@
 
         function randomizeChamp(){
             let champ = champions[getRandomInt(champions.length)];
-            document.getElementById("p_test").innerHTML = champ;
+
+            /*
+            let champ_name_edit = "";
+
+            // Special names: Bomb King, Sha Lin, Mal'Damba
+            if(champ.contains("bomb-king") || champ.contains("sha-lin")){
+                champ_name_edit = champ.replace('-', ' ');
+                //champ_name_edit = "".concat(champ.substr(0,1).toUpperCase(), champ.substring(1,champ.length));
+            }
+            else if(champ.contains("maldamba")){
+                champ_name_edit = "".concat(champ.substr(0,1).toUpperCase(),
+                                champ.substr(1,2), '\'', champ.substring(3,champ.length));
+            }
+            else
+                champ_name_edit = "".concat(champ.substr(0,1).toUpperCase(), champ.substring(1,champ.length));
+            */
+            document.getElementById("p_test").innerHTML = "".concat(champ.substr(0,1).toUpperCase(), champ.substring(1,champ.length));
+            //document.getElementById("p_test").innerHTML = champ;
             //document.getElementById("champ_image").src = "".concat("res/champion%20icons/", champ, ".jpg");
 
             let img_url = "".concat("https://webcdn.hirezstudios.com/paladins/assets/carousel/", champ, ".png");
