@@ -1,11 +1,18 @@
 *{ /* Browser Reset */
     margin: 10px;
     padding: 7px;
-    font-family: "Arial";
+    /*font-family: "Arial";*/
+    font-family: "Poppins",Helvetica,sans-serif;
 }
 .h1{
     color: cyan;
 }
+div{/*Debugging Data Toggle*/
+    /*border-style: solid;*/
+    border-color: #E53935;
+}
+
+
 .header {
     margin: 0px;
     padding: 0px;
@@ -27,12 +34,21 @@
     background-color:cyan;
     border-radius: 100px;
     text-align: center;
-    color: darkgrey;
+    color: #606060;
     font-size: 28px;
     font-weight: 800;
     margin-right: 8px;
     margin-top: 4px;
 }
+.name-text {
+    position: absolute;
+    left: 3em;
+    font-size: 28px;
+    color: #505050;
+}
+
+
+
 /* Top Navigation Buttons */
 .main{
     margin: 5px; padding: 5px;
@@ -41,13 +57,15 @@
     justify-content: center;
     align-items: center;
 }
+
 .nav ol{
     width: 100%; display: flex;
     border: cyan;
-    justify-content: space-between;
+    justify-content: right;
 }
 .nav ol li{
-    padding: 5px 10px; position: relative;
+    margin: 0;
+    padding: 5px 5px; position: relative;
     cursor: pointer; overflow: hidden;
 }
 .nav ol li::before{
@@ -63,7 +81,7 @@
 }
 .nav ol li a{
     color: black; text-decoration: none;
-    font-size: 14px; letter-spacing: 0.1rem;
+    font-size: 18px; letter-spacing: 0.1rem;
     transition: all 0.4s;
 }
 .nav ol li:hover a{
