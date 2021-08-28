@@ -40,14 +40,26 @@ div{/*Debugging Data Toggle*/
     margin-right: 8px;
     margin-top: 4px;
 }
+.logo img{
+    position: absolute;
+    left: 16px;
+    bottom: 24px;
+    width: 44px;
+    height: 44px;
+
+}
 .name-text {
     position: absolute;
     left: 3em;
     font-size: 28px;
     color: #505050;
+    transition: all 0.4s;
 }
-
-
+.name-text:hover{
+    color: black;
+    text-shadow: -1px -1px 10px lightgrey, 1px 1px 10px cyan;
+    transition: all 0.4s;
+}
 
 /* Top Navigation Buttons */
 .main{
