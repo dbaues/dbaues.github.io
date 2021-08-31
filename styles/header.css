@@ -1,18 +1,8 @@
-*{ /* Browser Reset */
-    margin: 10px;
-    padding: 7px;
-    /*font-family: "Arial";*/
-    font-family: "Poppins",Helvetica,sans-serif;
-}
-.h1{
-    color: cyan;
-}
-div{/*Debugging Data Toggle*/
-    /*border-style: solid;
-    border-color: #E53935;*/
-}
-
 /*
+    This File contains the styling for the top navigation bar
+    to allow for a universal design throughout the web site.
+        - Dan Bauer (2021)
+*/
 .header {
     margin: 0;
     padding: 0;
@@ -55,9 +45,8 @@ div{/*Debugging Data Toggle*/
     text-shadow: -1px -1px 10px lightgrey, 1px 1px 10px cyan;
     transition: all 0.4s;
 }
-*/
+
 /* Top Navigation Buttons */
-/*
 .main{
     margin: 5px; padding: 5px;
     width: 100%; height: 10vh;
@@ -96,10 +85,7 @@ div{/*Debugging Data Toggle*/
     color: cyan;
     text-shadow: -1px -1px 10px black, 1px 1px 10px cyan;
 }
-*/
-
 /* Frosted Glass Effect */
-/*
 .container {
     width: 80%;
     margin: 0 auto;
@@ -124,35 +110,3 @@ div{/*Debugging Data Toggle*/
     filter: blur(10px);
     margin: -20px;
 }
-*/
-/*
-footer ul{
-    width: 100%; display: flex;
-    border: cyan;
-    justify-content: right;
-}
-footer ul li{
-    margin: 0;
-    padding: 5px 5px; position: relative;
-    cursor: pointer; overflow: hidden;
-}
-footer ul li::before{
-    content: ""; position: absolute;
-    bottom: 0; left: 0;
-    width: 100%; height: 2px;
-    background: cyan;
-    transform: translateX(-100%);
-    transition: all 0.4s;
-}
-footer ul li:hover::before{
-    transform: translateX(0%);
-}
-footer ul li a{
-    color: black; text-decoration: none;
-    font-size: 18px; letter-spacing: 0.1rem;
-    transition: all 0.4s;
-}
-footer ul li:hover a{
-    color: cyan;
-    text-shadow: -1px -1px 10px black, 1px 1px 10px cyan;
-}*/

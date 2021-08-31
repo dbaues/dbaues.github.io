@@ -1,0 +1,8 @@
+
+body{
+    /* Sets the Background throughout site. */
+    background-image: url("../res/bckgrnd.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+}
