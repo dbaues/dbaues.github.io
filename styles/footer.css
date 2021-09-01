@@ -11,7 +11,7 @@ footer{
 footer ul{
     width: 100%; display: flex;
     border: cyan;
-    justify-content: right;
+    justify-content: space-between;
 }
 footer ul li{
     margin: 0;
@@ -37,4 +37,8 @@ footer ul li a{
 footer ul li:hover a{
     color: cyan;
     text-shadow: -1px -1px 10px black, 1px 1px 10px cyan;
+}
+.footer_div{
+    margin: 0;
+    padding: 0;
 }

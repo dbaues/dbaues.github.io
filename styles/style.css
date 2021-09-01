@@ -7,9 +7,9 @@
 .h1{
     color: cyan;
 }
-div{/*Debugging Data Toggle*/
-    /*border-style: solid;
-    border-color: #E53935;*/
+div, header, footer{
+    /*Debugging Data Toggle*/
+    /*border: solid red;*/
 }
 
 .content_container {
