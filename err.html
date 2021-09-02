@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Error 404</title>
+    <link rel="icon" href="res/db_icon.png">
+    <style>
+        body {
+            background-color: black;
+        }
+        .center{
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .back_link{
+            color: red;
+            text-align: center;
+        }
+        #element1 img{
+            filter: brightness(0) invert(.25);
+            height: 24px;
+        }
+    </style>
+</head>
+<body style="text-align: center">
+    <img src="res/error404.png" alt="Error Message" style="width:800px; height:600px;" class="center">
+    <div class="return">
+        <div id="element1">
+            <img src="res/db_icon.png" alt="">
+        </div>
+        <div id="element2">
+            <script style="text-align: center">
+                // Goes Back to the Home Page.
+                document.write('<a class="back_link" href="' + document.referrer + '" style="font-size: larger">Go Back</a>');
+            </script>
+        </div>
+    </div>
+</body>
+</html>
