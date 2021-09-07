@@ -1,0 +1,15 @@
+* { /* Browser Reset */
+    margin: 0; padding: 0;
+    font-family: "Arial", Helvetica, sans-serif;
+    /*font-family: "Poppins", Helvetica, sans-serif;*/
+}
+
+html{}
+
+body{
+    width: 80%;
+    border: 10px double maroon;
+    background-color: #606060;
+    margin: 20px auto;
+    border-radius: 10px;
+}
