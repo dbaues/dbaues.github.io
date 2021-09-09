@@ -85,7 +85,9 @@
     color: cyan;
     text-shadow: -1px -1px 10px black, 1px 1px 10px cyan;
 }
+
 /* Frosted Glass Effect */
+/*
 .container {
     width: 80%;
     margin: 0 auto;
@@ -110,3 +112,5 @@
     filter: blur(10px);
     margin: -20px;
 }
+
+ */
