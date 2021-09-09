@@ -1,6 +1,6 @@
 /*
-    Animates the
-
+    Animates the Paladins Champ Picker cards.
+        - Dan Bauer (2021)
 */
 @-webkit-keyframes cf4FadeInOut {
     0%   { opacity: 1; }
