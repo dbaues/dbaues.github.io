@@ -1,13 +1,14 @@
 *{ /* Browser Reset */
+    /* TODO: Fix margin/padding */
+    /* Currently at 10 & 7 respectively: reworking */
     margin: 10px;
     padding: 7px;
-    /*font-family: "Arial";*/
-    font-family: "Poppins",Helvetica,sans-serif;
+    font-family: "Poppins", Helvetica, sans-serif;
 }
-.h1{
+h1{
     color: cyan;
 }
-div, header, footer{
+div, header, footer, main{
     /*Debugging Data Toggle*/
     /*border: solid red;*/
 }
@@ -23,7 +24,7 @@ div, header, footer{
     background: inherit;
     overflow: hidden;
 }
-.content_container:before {
+.content_container::before {
     content: "";
     position: absolute;
     background: inherit;
