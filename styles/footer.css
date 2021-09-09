@@ -4,14 +4,46 @@
         - Dan Bauer (2021)
 */
 footer{
-    text-align-all: center;
+    width: 100%;
     display: flex;
-    justify-content: space-between;
+    flex-direction: row;
+    justify-content: stretch;
 }
+footer div{
+    margin: 0;
+    padding: 5px 5px; position: relative;
+    cursor: pointer; overflow: hidden;
+}
+footer div::before{
+    content: ""; position: absolute;
+    bottom: 0; left: 0;
+    width: 100%; height: 2px;
+    background: cyan;
+    transform: translateX(-100%);
+    transition: all 0.4s;
+}
+footer div:hover::before{
+    transform: translateX(0%);
+}
+footer div a{
+    color: black; text-decoration: none;
+    font-size: 12pt;
+    transition: all 0.4s;
+}
+footer div:hover a{
+    color: cyan;
+    text-shadow: -1px -1px 10px black, 1px 1px 10px cyan;
+}
+
+
+
+
+
+
 footer ul{
     width: 100%; display: flex;
     border: cyan;
-    justify-content: space-between;
+    justify-content: stretch;
 }
 footer ul li{
     margin: 0;
@@ -39,6 +71,13 @@ footer ul li:hover a{
     text-shadow: -1px -1px 10px black, 1px 1px 10px cyan;
 }
 .footer_div{
-    margin: 0;
-    padding: 0;
+    margin: 10px;
+    padding: 10px;
+
+    flex: 1 1 0;
 }
+#f_div_left { text-align: left; }
+#f_div_mid  { text-align: center; }
+#f_div_right{ text-align: right; }
+
+
