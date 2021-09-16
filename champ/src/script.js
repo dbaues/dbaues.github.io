@@ -1,5 +1,12 @@
-// Link to cooler images.
-// https://webcdn.hirezstudios.com/paladins/assets/carousel/furia.png
+/**
+ * Random Champ Picker
+ * @author Dan Bauer
+ * @version 2.1.0
+ *
+ * Version 2 implements jQuery and JSON to allow for a more scalable
+ * and feature packed version of the Paladins Champ Picker.
+ */
+
 
 /**
  * Using Math.random, picks a random number between 0 and max.
@@ -18,7 +25,7 @@ function getRandomInt(max) {
  */
 if (!String.format) {
     String.format = function(format) {
-        var args = Array.prototype.slice.call(arguments, 1);
+        let args = Array.prototype.slice.call(arguments, 1);
         return format.replace(/{(\d+)}/g, function(match, number) {
             return typeof args[number] != 'undefined'
                 ? args[number]
@@ -30,6 +37,8 @@ if (!String.format) {
 
 /**
  * Picks a random champion from list and displays it.
+ * Link to cooler images.
+ * https://webcdn.hirezstudios.com/paladins/assets/carousel/furia.png
  * @param arr array of champs in JSON format.
  */
 function randomizeChamp(arr) {
@@ -38,7 +47,6 @@ function randomizeChamp(arr) {
 
     document.getElementById("p_test").innerHTML = champ_json["alt"];
     document.getElementById("champ_image").src = String.format(URL, champ_json["name"]);
-    //document.getElementById("champ_image").src = "".concat("https://webcdn.hirezstudios.com/paladins/assets/carousel/", champ_json["name"], ".png");
 }
 
 /**
