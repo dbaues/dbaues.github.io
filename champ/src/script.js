@@ -14,6 +14,7 @@ function getRandomInt(max) {
  * Functions as String.format as in other languages.
  * Checks to see if exists first.
  * Courtesy of StackOverflow
+ * https://stackoverflow.com/questions/610406/javascript-equivalent-to-printf-string-format
  */
 if (!String.format) {
     String.format = function(format) {
@@ -42,6 +43,7 @@ function randomizeChamp(arr) {
 
 /**
  * Grabs the JSON formatted champions out of the champs.json file.
+ * https://code-maven.com/javascript-on-github-pages
  */
 function getChamps() {
     $().ready(function() {
