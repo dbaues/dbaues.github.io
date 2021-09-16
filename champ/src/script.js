@@ -31,4 +31,4 @@ function randomizeChamp() {
     document.getElementById("champ_image").src = "".concat("https://webcdn.hirezstudios.com/paladins/assets/carousel/", champ, ".png");
 }
 
-const champions = ["androxus", "ash", "atlas", "barik", "bomb-king", "buck", "cassie", "corvus", "dredge", "drogoz", "evie", "fernando", "furia", "grohk", "grover", "imani", "inara", "io", "jenos", "khan", "kinessa", "koga", "lex", "lian", "maeve", "makoa", "maldamba", "moji", "octavia", "pip", "raum", "rei", "ruckus", "seris", "sha-lin", "skye", "strix", "talus", "terminus", "tiberius", "torvald", "tyra", "vatu", "viktor", "vivian", "vora", "willo", "yagorath", "ying", "zhin"];
+const champions = ["androxus", "ash", "atlas", "barik", "bomb-king", "buck", "cassie", "corvus", "dredge", "drogoz", "evie", "fernando", "furia", "grohk", "grover", "imani", "inara", "io", "jenos", "khan", "kinessa", "koga", "lex", "lian", "maeve", "makoa", "maldamba", "moji", "octavia", "pip", "raum", "rei", "ruckus", "saati", "seris", "sha-lin", "skye", "strix", "talus", "terminus", "tiberius", "torvald", "tyra", "vatu", "viktor", "vivian", "vora", "willo", "yagorath", "ying", "zhin"];
