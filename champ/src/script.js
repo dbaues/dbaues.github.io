@@ -1,34 +1,54 @@
 // Link to cooler images.
 // https://webcdn.hirezstudios.com/paladins/assets/carousel/furia.png
 
-
+/**
+ * Using Math.random, picks a random number between 0 and max.
+ * @param max maximum number to be generated.
+ * @returns {number} representing the randomly generated choice.
+ */
 function getRandomInt(max) {
     return Math.floor(Math.random() * max);
 }
 
-function randomizeChamp() {
-    let champ = champions[getRandomInt(champions.length)];
-
-    /*
-    let champ_name_edit = "";
-
-    // Special names: Bomb King, Sha Lin, Mal'Damba
-    if(champ.contains("bomb-king") || champ.contains("sha-lin")){
-        champ_name_edit = champ.replace('-', ' ');
-        //champ_name_edit = "".concat(champ.substr(0,1).toUpperCase(), champ.substring(1,champ.length));
-    }
-    else if(champ.contains("maldamba")){
-        champ_name_edit = "".concat(champ.substr(0,1).toUpperCase(),
-                        champ.substr(1,2), '\'', champ.substring(3,champ.length));
-    }
-    else
-        champ_name_edit = "".concat(champ.substr(0,1).toUpperCase(), champ.substring(1,champ.length));
-    */
-    document.getElementById("p_test").innerHTML = "".concat(champ.substr(0,1).toUpperCase(), champ.substring(1,champ.length));
-    //document.getElementById("p_test").innerHTML = champ;
-    //document.getElementById("champ_image").src = "".concat("res/champion%20icons/", champ, ".jpg");
-
-    document.getElementById("champ_image").src = "".concat("https://webcdn.hirezstudios.com/paladins/assets/carousel/", champ, ".png");
+/**
+ * Functions as String.format as in other languages.
+ * Checks to see if exists first.
+ * Courtesy of StackOverflow
+ */
+if (!String.format) {
+    String.format = function(format) {
+        var args = Array.prototype.slice.call(arguments, 1);
+        return format.replace(/{(\d+)}/g, function(match, number) {
+            return typeof args[number] != 'undefined'
+                ? args[number]
+                : match
+                ;
+        });
+    };
 }
 
-const champions = ["androxus", "ash", "atlas", "barik", "bomb-king", "buck", "cassie", "corvus", "dredge", "drogoz", "evie", "fernando", "furia", "grohk", "grover", "imani", "inara", "io", "jenos", "khan", "kinessa", "koga", "lex", "lian", "maeve", "makoa", "maldamba", "moji", "octavia", "pip", "raum", "rei", "ruckus", "saati", "seris", "sha-lin", "skye", "strix", "talus", "terminus", "tiberius", "torvald", "tyra", "vatu", "viktor", "vivian", "vora", "willo", "yagorath", "ying", "zhin"];
+/**
+ * Picks a random champion from list and displays it.
+ * @param arr array of champs in JSON format.
+ */
+function randomizeChamp(arr) {
+    let champ_json = arr[getRandomInt(arr.length)];
+    let URL = "https://webcdn.hirezstudios.com/paladins/assets/carousel/{0}.png"
+
+    document.getElementById("p_test").innerHTML = champ_json["alt"];
+    document.getElementById("champ_image").src = String.format(URL, champ_json["name"]);
+    //document.getElementById("champ_image").src = "".concat("https://webcdn.hirezstudios.com/paladins/assets/carousel/", champ_json["name"], ".png");
+}
+
+/**
+ * Grabs the JSON formatted champions out of the champs.json file.
+ */
+function getChamps() {
+    $().ready(function() {
+        $.getJSON( "src/data/champs.json", function(data) {
+            let arr = data["champs"];
+            randomizeChamp(arr);
+            //$("#text").html("<i>"+arr[getRandomInt(arr.length)]["alt"]+"</i>");
+        });
+    });
+}

@@ -142,3 +142,9 @@
     cursor: pointer;
     border-radius: 16px;
 }
+
+
+/********** NON DEPRECATED ELEMENTS **************/
+#champ_image {
+    height: 500px;
+}
