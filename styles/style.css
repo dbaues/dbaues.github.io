@@ -1,12 +1,7 @@
 *{ /* Browser Reset */
-    /* TODO: Fix margin/padding */
-    /* Currently at 10 & 7 respectively: reworking */
     margin: 0;
     padding: 0;
     font-family: "Poppins", Helvetica, sans-serif;
-}
-h1{
-    color: cyan;
 }
 div, header, footer, main{
     /*Debugging Data Toggle
@@ -96,7 +91,6 @@ h2 {
     flex-direction: row;
     justify-content: space-evenly;
 }
-
 .content_grid{
     margin: 30px;
     padding: 10px;
@@ -113,7 +107,9 @@ h2 {
     height: 3px;
     background-color: cyan;
 }
-
-#pcp_desc {
+.news_description {
     padding-right: 5%;
+    background-image: url("../res/icon.svg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
 }
