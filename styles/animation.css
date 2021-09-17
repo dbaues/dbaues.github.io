@@ -35,9 +35,10 @@
 }
 
 #cf4a {
-    position:relative;
-    height:281px;
-    width:450px;
+    position: relative;
+    width: 400px;
+    /*height:;
+    width:450px;*/
     margin:0 auto;
     background: inherit;
 }
@@ -48,7 +49,7 @@
     max-width: 100%;
     width: auto;
     height: auto;
-    vertical-align: middle;
+    /*vertical-align: middle;*/
     border: solid 5px;
     border-radius: 20px;
     -ms-interpolation-mode: bicubic;
