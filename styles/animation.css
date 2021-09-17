@@ -35,7 +35,7 @@
 }
 
 #cf4a {
-    position: relative;
+    /*position: relative;*/
     width: 400px;
     /*height:;
     width:450px;*/
@@ -44,13 +44,14 @@
 }
 
 #cf4a img {
+    color: darkcyan;
     position: absolute;
-    left: 0;
+    left: 8%;
     max-width: 100%;
-    width: auto;
+    width: 33%;
     height: auto;
-    /*vertical-align: middle;*/
-    border: solid 5px;
+    vertical-align: middle;
+    border: solid 3px;
     border-radius: 20px;
     -ms-interpolation-mode: bicubic;
 

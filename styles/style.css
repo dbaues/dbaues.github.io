@@ -9,8 +9,8 @@ h1{
     color: cyan;
 }
 div, header, footer, main{
-    /*Debugging Data Toggle*/
-    /*outline: 2px solid red;*/
+    /*Debugging Data Toggle
+    outline: 2px solid red;*/
 }
 
 /******* Frosted Class Containers *******/
@@ -42,7 +42,6 @@ div, header, footer, main{
 /******** Darker Frosted Content Containers ********/
 .new_content {
     width: 85%;
-    height: 500px;
     margin: 20px auto;
     padding: 10px;
     box-shadow: 0 0 .25rem 0 rgba(0, 0, 0,.2);
@@ -62,15 +61,59 @@ div, header, footer, main{
     background: inherit;
     z-index: 0;
     inset: 0;
-    background-color: rgba(65,65,65,.5);
+    background-color: rgba(65,65,65,.6);
+    box-shadow: inset 0 0 2000px rgba(50, 50, 50, .7);
     filter: blur(20px);
     margin: -20px;
 }
 
 /******* Makes News Cards look cleaner ********/
-.content_grid{
+h1 {
+    padding-left: 7%;
     margin: 10px;
-    padding: 10px;
+    font-weight: 400;
+    color: #606060;
+    text-shadow: -1px -1px 5px darkcyan, 1px 1px 5px whitesmoke;
+}
+h2 {
+    padding-left: 7%;
+    margin: 10px;
+    color: cyan;
+    font-weight: 500;
+    z-index: 3;
+}
+.news_line{
+    color: black;
+    position: absolute;
+    left: 7.5%;
+    width: 33%;
+    height: 3px;
+    border-width: 1px;
+    background-color: darkcyan;
+}
+#pcp_link {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
 
+.content_grid{
+    margin: 30px;
+    padding: 10px;
+    z-index: 3;
     flex: 1 1 0;
+}
+.content_grid h3, .content_grid p {
+    color: white;
+    font-weight: 500;
+    z-index: 3;
+}
+.content_grid hr {
+    color: darkcyan;
+    height: 3px;
+    background-color: cyan;
+}
+
+#pcp_desc {
+    padding-right: 5%;
 }

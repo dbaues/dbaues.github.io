@@ -11,7 +11,6 @@
         <link rel="stylesheet" href="styles/background.css">
         <link rel="stylesheet" href="styles/animation.css">
         <link rel="stylesheet" href="styles/ticker.css">
-        <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Raleway">
         <link rel="icon" href="res/gh_icon.png">
         <link rel="stylesheet" id="leven-google-fonts-css" href="https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic" type="text/css" media="all">
         <script src="src/load.js"></script>
@@ -63,20 +62,21 @@
         <div class="content_container">
             <main>
                 <h1>News!</h1>
+                <hr class="news_line">
                 <div class="grid">
                     <br>
-                    <div class="new_content" id="about_me">
+                    <!--<div class="new_content" id="about_me">
                         <a href="#" style="margin:0; padding:0;">
                             <div id="am_link">
                                 <h2>About Me</h2>
                             </div>
                         </a>
                     </div>
-                    <br>
+                    <br>-->
                     <div class="new_content" id="paladins_champ">
-                        <a href="tmp.html" style="margin:0; padding:0;">
-                            <div id="pcp_link">
-                                <h2><b>Paladins Random Champion Picker [BETA]</b></h2>
+                        <a href="champ" style="margin:0; padding:0; text-decoration: none; z-index: 3">
+                            <h2>Paladins Random Champion Picker [BETA]</h2>
+                            <div id="pcp_link" style="z-index: 3;">
                                 <div class="content_grid">
                                     <div id="cf4a">
                                         <!-- Fades in/out the following champion splash arts. -->
@@ -86,8 +86,15 @@
                                         <img src="res/Champion%20Spash%20Screen/Vatu_SplashArt.jpg" alt="Paladins Champions">
                                     </div>
                                 </div>
-                                <div class="content_grid">
-                                    <h3>Introducing the brand new, web hosted Paladins Champion Picker. Using this new tool provides players who play this game way too much a way to decide who they are going to play. Version 1 is out now.</h3>
+                                <div class="content_grid" id="pcp_desc">
+                                    <h3>Introducing the brand new, Paladins Champion Picker</h3>
+                                    <hr style="color: darkcyan;"><br>
+                                    <p>
+                                        Have you ever launched yourself into your 12th game of the night and not know which champion you want to play? Look no further. This new tool provides these players who play this game way too much, a way to decide which champion they should play. <!--Now including role based selections.-->
+                                        Includes all current champions of the game.
+                                    </p>
+                                    <br>
+                                    <p>Version 2.1 out now.</p>
                                 </div>
                             </div>
                         </a>
