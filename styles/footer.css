@@ -1,8 +1,8 @@
-/*
+/********************************************************
     This File contains the styling for the bottom bar to
     allow for a universal design throughout the web site.
         - Dan Bauer (2021)
-*/
+ *******************************************************/
 footer{
     width: 100%;
     display: flex;

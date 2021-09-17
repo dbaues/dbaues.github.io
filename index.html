@@ -10,36 +10,51 @@
         <link rel="stylesheet" href="styles/footer.css">
         <link rel="stylesheet" href="styles/background.css">
         <link rel="stylesheet" href="styles/animation.css">
+        <link rel="stylesheet" href="styles/ticker.css">
         <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Raleway">
         <link rel="icon" href="res/gh_icon.png">
         <link rel="stylesheet" id="leven-google-fonts-css" href="https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic" type="text/css" media="all">
+        <script src="src/load.js"></script>
     </head>
     <body>
+        <!-- <div id="loader"></div> -->
         <!-- Frosted Glass Header -->
         <div class="content_container">
             <header id="db_header" class="header">
-                <!-- Name on top of Page. -->
-                <div class="text_label">
+                <div class="header_section" id="name_logo">
                     <a href="https://dbaues.github.io">
-                        <div class="logo">
-                            <img alt="logo" src="res/db_icon.png">
-                        </div>
                         <div class="name-text">
-                            <b style="margin: 0; padding: 0">Dan</b>Bauer
+                            <div class="name">
+                                <div class="logo">
+                                    <img alt="" src="res/icon.svg">
+                                </div>
+                            </div>
+                            <div class="name first_name">Dan</div>
+                            <div class="name last_name">Bauer</div>
                         </div>
                     </a>
                 </div>
-                <!-- Buttons across the top. -->
-                <div class="main">
-                    <div class="nav">
-                        <ol>
-                            <li><a href="tmp.html">About</a></li>
-                            <li><a href="tmp.html">Resume</a></li>
-                            <li><a href="tmp.html">Contact</a></li>
-                            <!-- Add target="_blank" for opening in new tab. -->
-                            <li><a target="_blank" href="https://github.com/dbaues">Github</a></li>
-                        </ol>
+                <div class="header_section ticker_wrap">
+                    <div class="ticker">
+                        <!-- Ticker news items -->
+                        <div class="ticker_item">Paladins Champ Picker Version 2 out now!</div>
+                        <div class="ticker_item">Dan Bauer - &copy; 2021</div>
+                        <div class="ticker_item">Hosted with Github Pages</div>
+
+                        <div class="ticker_item">Paladins Champ Picker Version 2 out now!</div>
+                        <div class="ticker_item">Dan Bauer - &copy; 2021</div>
+                        <div class="ticker_item">Hosted With Github Pages</div>
+                        <!-- Ticker news items need the repeat -->
                     </div>
+                </div>
+                <div class="header_section nav" id="page_nav">
+                    <!-- Buttons Section across the top. -->
+                    <ol>
+                        <li><a href="tmp.html">About</a></li>
+                        <li><a href="tmp.html">Resume</a></li>
+                        <li><a href="tmp.html">Contact</a></li>
+                        <li><a target="_blank" href="https://github.com/dbaues">Github</a></li>
+                    </ol>
                 </div>
             </header>
         </div>
@@ -59,15 +74,20 @@
                     </div>
                     <br>
                     <div class="new_content" id="paladins_champ">
-                        <a href="champ" style="margin:0; padding:0;">
+                        <a href="tmp.html" style="margin:0; padding:0;">
                             <div id="pcp_link">
-                                <h2>Introducing the new <b>Paladins Random Champion Picker</b></h2>
-                                <div id="cf4a" style="text-align: left">
-                                    <!-- Fades in/out the following champion splash arts. -->
-                                    <img src="res/Champion%20Spash%20Screen/Corvus_SplashArt.jpg" alt="Paladins Champions">
-                                    <img src="res/Champion%20Spash%20Screen/Vora_SplashArt.jpg" alt="Paladins Champions">
-                                    <img src="res/Champion%20Spash%20Screen/Furia_SplashArt.jpg" alt="Paladins Champions">
-                                    <img src="res/Champion%20Spash%20Screen/Vatu_SplashArt.jpg" alt="Paladins Champions">
+                                <h2><b>Paladins Random Champion Picker [BETA]</b></h2>
+                                <div class="content_grid">
+                                    <div id="cf4a">
+                                        <!-- Fades in/out the following champion splash arts. -->
+                                        <img src="res/Champion%20Spash%20Screen/Corvus_SplashArt.jpg" alt="Paladins Champions">
+                                        <img src="res/Champion%20Spash%20Screen/Vora_SplashArt.jpg" alt="Paladins Champions">
+                                        <img src="res/Champion%20Spash%20Screen/Furia_SplashArt.jpg" alt="Paladins Champions">
+                                        <img src="res/Champion%20Spash%20Screen/Vatu_SplashArt.jpg" alt="Paladins Champions">
+                                    </div>
+                                </div>
+                                <div class="content_grid">
+                                    <h3>Introducing the brand new, web hosted Paladins Champion Picker. Using this new tool provides players who play this game way too much a way to decide who they are going to play. Version 1 is out now.</h3>
                                 </div>
                             </div>
                         </a>
@@ -77,7 +97,7 @@
             </main>
         </div>
         <br>
-        <!-- Footer section of page with navigation options. -->
+        <!-- Footer section of page with basic navigation options. -->
         <!-- TODO: Add site theme change -->
         <div class="content_container">
             <footer>

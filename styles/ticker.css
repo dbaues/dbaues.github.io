@@ -1,0 +1,51 @@
+/***************************************************
+    This Stylesheet contains the styling needed to
+    animate the header news ticker.
+        - Dan Bauer (2021)
+ ***************************************************/
+
+/********** Animates Ticker *************/
+@-webkit-keyframes ticker {
+    0% {
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+    100% {
+        -webkit-transform: translate3d(-50%, 0, 0);
+        transform: translate3d(-50%, 0, 0);
+    }
+}
+@keyframes ticker {
+    0% {
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+    100% {
+        -webkit-transform: translate3d(-50%, 0, 0);
+        transform: translate3d(-50%, 0, 0);
+    }
+}
+
+/************ Ticker Styling ************/
+.ticker_wrap {
+    max-width: 100%;
+    overflow: hidden;
+    box-sizing: content-box;
+
+}
+.ticker {
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+    box-sizing: content-box;
+
+    animation: ticker 20s linear infinite;
+    -webkit-animation: ticker 20s linear infinite;
+}
+.ticker_item {
+    display: inline-block;
+    height: 2em;
+    padding: 0 3rem;
+    font-size: 18px;
+    color: rgb(60,60,60);
+}

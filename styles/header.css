@@ -1,38 +1,79 @@
-/*
+/************************************************************
     This File contains the styling for the top navigation bar
     to allow for a universal design throughout the web site.
         - Dan Bauer (2021)
-*/
+ ************************************************************/
+
+/******* Groups Header Sections Horizontally ********/
 .header {
     margin: 0;
     padding: 0;
-    display: grid;
+    display: flex;
+    flex-direction: row;
+    justify-content: stretch;
     width: 100%;
-    position: relative;
-    grid-template-columns: 1fr 1fr;
+}
+.header_section {
+    margin: 10px;
+    padding: 10px;
+    flex: 1 1 0;
+}
+.header_section a {
+    text-decoration: none;
+}
+
+/****** Section 1: Name/Logo **********/
+#name_logo {
+    text-align: left;
+}
+.name-text {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    font-size: 28px;
+    color: #505050;
+}
+.name {
+    margin: 0;
+    padding: 0;
+    flex: inherit 1 0;
+}
+.first_name {
+    font-weight: 700;
+    transition: all 0.2s;
+}
+.last_name {
+    font-weight: 400;
+    transition: all 0.2s;
+}
+.name-text:hover .first_name, .name-text:focus .first_name {
+    font-weight: 500;
+    color: #151515;
+    text-shadow: -1px -1px 10px lightgrey, 1px 1px 10px cyan;
+    transition: all 0.2s;
+}
+.name-text:hover .last_name, .name-text:focus .last_name {
+    font-weight: 600;
+    color: #151515;
+    text-shadow: -1px -1px 10px lightgrey, 1px 1px 10px cyan;
+    transition: all 0.2s;
 }
 .logo {
-    float: left;
-    width: 44px;
-    height: 44px;
-    line-height: 44px;
+    width: 48px;
+    height: 48px;
     background-color:cyan;
     border-radius: 100px;
-    text-align: center;
-    color: #606060;
-    font-size: 28px;
-    font-weight: 800;
-    margin-right: 8px;
-    margin-top: 4px;
+    margin-right: 10px;
 }
 .logo img{
-    position: absolute;
-    left: 16px;
-    bottom: 24px;
-    width: 44px;
-    height: 44px;
-
+    width: 100%;
+    height: 100%;
 }
+
+
+
+
+/*
 .name-text {
     position: absolute;
     left: 3em;
@@ -45,16 +86,26 @@
     text-shadow: -1px -1px 10px lightgrey, 1px 1px 10px cyan;
     transition: all 0.4s;
 }
-
+ */
 /* Top Navigation Buttons */
-.main{
-    margin: 5px; padding: 5px;
-    width: 100%; height: 10vh;
+/********** Section 2: Page Navigation **********/
+#page_nav {
+    outline-color: #43A047;
+    width: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
 }
+/*.main{
+    outline-color: #43A047;
+    margin: 5px; padding: 5px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}*/
 
+/********** Navigation Hover Effects **********/
 .nav ol{
     width: 100%; display: flex;
     border: cyan;
@@ -62,7 +113,7 @@
 }
 .nav ol li{
     margin: 0;
-    padding: 5px 5px; position: relative;
+    padding: 10px 10px; position: relative;
     cursor: pointer; overflow: hidden;
 }
 .nav ol li::before{
@@ -78,39 +129,10 @@
 }
 .nav ol li a{
     color: black; text-decoration: none;
-    font-size: 18px; letter-spacing: 0.1rem;
+    font-size: 18px; letter-spacing: 0.05rem;
     transition: all 0.4s;
 }
 .nav ol li:hover a{
     color: cyan;
     text-shadow: -1px -1px 10px black, 1px 1px 10px cyan;
 }
-
-/* Frosted Glass Effect */
-/*
-.container {
-    width: 80%;
-    margin: 0 auto;
-    height: 6rem;
-    box-shadow: 0 0 .25rem 0 rgba(0, 0, 0, .2);
-    border-radius: 5px;
-    position: relative;
-    z-index: 1;
-    background: inherit;
-    overflow: hidden;
-}
-.container:before {
-    content: "";
-    position: absolute;
-    background: inherit;
-    z-index: -1;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    box-shadow: inset 0 0 2000px rgba(255, 255, 255, .5);
-    filter: blur(10px);
-    margin: -20px;
-}
-
- */

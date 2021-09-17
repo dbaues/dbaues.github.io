@@ -1,8 +1,8 @@
 *{ /* Browser Reset */
     /* TODO: Fix margin/padding */
     /* Currently at 10 & 7 respectively: reworking */
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
     font-family: "Poppins", Helvetica, sans-serif;
 }
 h1{
@@ -10,13 +10,13 @@ h1{
 }
 div, header, footer, main{
     /*Debugging Data Toggle*/
-    /*border: solid red;*/
+    /*outline: 2px solid red;*/
 }
 
 /******* Frosted Class Containers *******/
 .content_container {
     width: 80%;
-    margin: 20px auto;
+    margin: 10px auto;
     /*height: 64rem;*/
     box-shadow: 0 0 .25rem 0 rgba(0, 0, 0, .2);
     border-radius: 5px;
@@ -42,6 +42,7 @@ div, header, footer, main{
 /******** Darker Frosted Content Containers ********/
 .new_content {
     width: 85%;
+    height: 500px;
     margin: 20px auto;
     padding: 10px;
     box-shadow: 0 0 .25rem 0 rgba(0, 0, 0,.2);
@@ -50,6 +51,10 @@ div, header, footer, main{
     z-index: 1;
     background: inherit;
     overflow: hidden;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: stretch;
 }
 .new_content::before {
     content: "";
@@ -60,4 +65,12 @@ div, header, footer, main{
     background-color: rgba(65,65,65,.5);
     filter: blur(20px);
     margin: -20px;
+}
+
+/******* Makes News Cards look cleaner ********/
+.content_grid{
+    margin: 10px;
+    padding: 10px;
+
+    flex: 1 1 0;
 }
