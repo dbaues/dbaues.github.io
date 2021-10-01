@@ -1,0 +1,869 @@
+{"champs":[
+  {
+    "name": "androxus",
+    "role": "flank",
+    "alt": "Androxus",
+    "talents": [
+      ["Cursed Revolver", "61.15%"],
+      ["Godslayer", "31.79%"],
+      ["Defiant Fist", "7.06%"]
+    ],
+    "items": [
+      ["Cauterize", "66.63%"],
+      ["Kill to Heal", "37.65%"],
+      ["Haven", "34.87%"],
+      ["Life Rip", "34.47%"],
+      ["Nimble", "31.1%"]
+    ]
+  },
+  {
+    "name": "ash",
+    "role": "frontline",
+    "alt": "Ash",
+    "talents": [
+      ["Fortress Breaker", "56.29%"],
+      ["Battering Ram", "33.17%"],
+      ["Slug Shot", "10.54%"]
+    ],
+    "items": [
+      ["Cauterize", "72.25%"],
+      ["Rejuvenate", "46.93%"],
+      ["Haven", "46.75%"],
+      ["Chronos", "29.14%"],
+      ["Morale Boost", "23.4%"]
+    ]
+  },
+  {
+    "name": "atlas",
+    "role": "frontline",
+    "alt": "Atlas",
+    "talents": [
+      ["Unstable Fissure", "38.08%"],
+      ["Deja vu", "31.1%"],
+      ["Temporal Divide", "30.83%"]
+    ],
+    "items": [
+      ["Chronos", "61.26%"],
+      ["Cauterize", "59.51%"],
+      ["Haven", "46.18%"],
+      ["Rejuvenate", "37.36%"],
+      ["Life Rip", "18.79%"]
+    ]
+  },
+  {
+    "name": "barik",
+    "role": "frontline",
+    "alt": "Barik",
+    "talents": [
+      ["Forgefire", "47.31%"],
+      ["Fortify", "38.79%"],
+      ["Tinkerin", "13.9%"]
+    ],
+    "items": [
+      ["Cauterize", "65.07%"],
+      ["Haven", "47.18%"],
+      ["Rejuvenate", "41.45%"],
+      ["Chronos", "32.41%"],
+      ["Morale Boost", "16.42%"]
+    ]
+  },
+  {
+    "name": "bomb-king",
+    "role": "damage",
+    "alt": "Bomb King",
+    "talents": [
+      ["Royal Subjects", "40.6%"],
+      ["Chain Reaction", "37.71%"],
+      ["Accelerant", "21.69%"]
+    ],
+    "items": [
+      ["Cauterize", "59.49%"],
+      ["Haven", "34.03%"],
+      ["Life Rip", "33.79%"],
+      ["Nimble", "30.56%"],
+      ["Kill to Heal", "28.85%"]
+    ]
+  },
+  {
+    "name": "buck",
+    "role": "flank",
+    "alt": "Buck",
+    "talents": [
+      ["Ensnare", "42.3%"],
+      ["Bulk Up", "34.19%"],
+      ["Bounce House", "23.51%"]
+    ],
+    "items": [
+      ["Cauterize", "75.41%"],
+      ["Life Rip", "35.62%"],
+      ["Haven", "34.81%"],
+      ["Deft Hands", "33.26%"],
+      ["Kill to Heal", "29.92%"]
+    ]
+  },
+  {
+    "name": "cassie",
+    "role": "damage",
+    "alt": "Cassie",
+    "talents": [
+      ["Exaction", "48.52%"],
+      ["Impulse", "41.55%"],
+      ["Big Game", "9.94%"]
+    ],
+    "items": [
+      ["Cauterize", "72.02%"],
+      ["Haven", "37.28%"],
+      ["Nimble", "35.47%"],
+      ["Life Rip", "29.87%"],
+      ["Chronos", "29.58%"]
+    ]
+  },
+  {
+    "name": "corvus",
+    "role": "support",
+    "alt": "Corvus",
+    "talents": [
+      ["Spreading Influence", "45.34%"],
+      ["Dark Gifts", "32.78%"],
+      ["Stunning Visage", "21.88%"]
+    ],
+    "items": [
+      ["Chronos", "84.47%"],
+      ["Cauterize", "43.26%"],
+      ["Haven", "35.38%"],
+      ["Nimble", "28.13%"],
+      ["Life Rip", "21.79%"]
+    ]
+  },
+  {
+    "name": "dredge",
+    "role": "damage",
+    "alt": "Dredge",
+    "talents": [
+      ["Scuttle", "42.19%"],
+      ["Hurl", "35.77%"],
+      ["Abyss Spike", "22.04%"]
+    ],
+    "items": [
+      ["Cauterize", "62.06%"],
+      ["Deft Hands", "52.12%"],
+      ["Life Rip", "35.43%"],
+      ["Haven", "30.75%"],
+      ["Nimble", "26.63%"]
+    ]
+  },
+  {
+    "name": "drogoz",
+    "role": "damage",
+    "alt": "Drogoz",
+    "talents": [
+      ["Fusillade", "47.34%"],
+      ["Combustible", "37.16%"],
+      ["W.Y.R.M. Jets", "15.5%"]
+    ],
+    "items": [
+      ["Cauterize", "63.24%"],
+      ["Haven", "39.76%"],
+      ["Nimble", "37.52%"],
+      ["Kill to Heal", "35.43%"],
+      ["Life Rip", "28.38%"]
+    ]
+  },
+  {
+    "name": "evie",
+    "role": "flank",
+    "alt": "Evie",
+    "talents": [
+      ["Wormhole", "50.8%"],
+      ["Snow Globe", "24.81%"],
+      ["Over the Moon", "24.39%"]
+    ],
+    "items": [
+      ["Cauterize", "77.15%"],
+      ["Haven", "37.06%"],
+      ["Kill to Heal", "35.44%"],
+      ["Chronos", "26.17%"],
+      ["Life Rip", "25.65%"]
+    ]
+  },
+  {
+    "name": "fernando",
+    "role": "frontline",
+    "alt": "Fernando",
+    "talents": [
+      ["Aegis", "85.62%"],
+      ["Scorch", "10.86%"],
+      ["Formidable", "3.52%"]
+    ],
+    "items": [
+      ["Cauterize", "67.85%"],
+      ["Rejuvenate", "54.64%"],
+      ["Haven", "46.66%"],
+      ["Guardian", "30.71%"],
+      ["Chronos", "21.67%"]
+    ]
+  },
+  {
+    "name": "furia",
+    "role": "support",
+    "alt": "Furia",
+    "talents": [
+      ["Exterminate", "46.8%"],
+      ["Cherish", "37.28%"],
+      ["Solar Blessing", "15.92%"]
+    ],
+    "items": [
+      ["Chronos", "85.35%"],
+      ["Cauterize", "47.32%"],
+      ["Haven", "33.53%"],
+      ["Nimble", "31.05%"],
+      ["Morale Boost", "25.15%"]
+    ]
+  },
+  {
+    "name": "grohk",
+    "role": "support",
+    "alt": "Grohk",
+    "talents": [
+      ["Totemic Ward", "38.45%"],
+      ["Spirit's Domain", "32.41%"],
+      ["Maelstrom", "29.14%"]
+    ],
+    "items": [
+      ["Chronos", "61.7%"],
+      ["Cauterize", "56.14%"],
+      ["Haven", "33.55%"],
+      ["Morale Boost", "32.78%"],
+      ["Life Rip", "27.91%"]
+    ]
+  },
+  {
+    "name": "grover",
+    "role": "support",
+    "alt": "Grover",
+    "talents": [
+      ["Rampant Blooming", "41.28%"],
+      ["Deep Roots", "35.44%"],
+      ["Ferocity", "23.28%"]
+    ],
+    "items": [
+      ["Chronos", "73.92%"],
+      ["Cauterize", "39.23%"],
+      ["Haven", "38.46%"],
+      ["Morale Boost", "35.41%"],
+      ["Nimble", "29.84%"]
+    ]
+  },
+  {
+    "name": "imani",
+    "role": "damage",
+    "alt": "Imani",
+    "talents": [
+      ["Splitting Ice", "65.76%"],
+      ["Pyromania", "20.76%"],
+      ["Mana Rift", "13.48%"]
+    ],
+    "items": [
+      ["Cauterize", "72.14%"],
+      ["Life Rip", "44.04%"],
+      ["Chronos", "36.43%"],
+      ["Haven", "34.3%"],
+      ["Kill to Heal", "25.03%"]
+    ]
+  },
+  {
+    "name": "inara",
+    "role": "frontline",
+    "alt": "Inara",
+    "talents": [
+      ["Treacherous Ground", "40.07%"],
+      ["Mother's Grace", "38.87%"],
+      ["Tremors", "21.05%"]
+    ],
+    "items": [
+      ["Cauterize", "64.59%"],
+      ["Rejuvenate", "59.62%"],
+      ["Haven", "56.1%"],
+      ["Chronos", "38.08%"],
+      ["Nimble", "20.92%"]
+    ]
+  },
+  {
+    "name": "io",
+    "role": "support",
+    "alt": "Io",
+    "talents": [
+      ["Life Link", "75.74%"],
+      ["Goddess' Blessing", "14.41%"],
+      ["Sacrifice", "9.86%"]
+    ],
+    "items": [
+      ["Nimble", "57.27%"],
+      ["Haven", "54.92%"],
+      ["Cauterize", "43.55%"],
+      ["Chronos", "37.88%"],
+      ["Life Rip", "20.34%"]
+    ]
+  },
+  {
+    "name": "jenos",
+    "role": "support",
+    "alt": "Jenos",
+    "talents": [
+      ["Luminary", "52.18%"],
+      ["Binary Star", "28.32%"],
+      ["The Power Cosmeum", "19.5%"]
+    ],
+    "items": [
+      ["Chronos", "55.89%"],
+      ["Cauterize", "47.39%"],
+      ["Morale Boost", "38.12%"],
+      ["Haven", "32.73%"],
+      ["Life Rip", "23.65%"]
+    ]
+  },
+  {
+    "name": "khan",
+    "role": "frontline",
+    "alt": "Khan",
+    "talents": [
+      ["Storm of Bullets", "54.36%"],
+      ["Lian's Shield", "30.07%"],
+      ["Vortex Grip", "15.57%"]
+    ],
+    "items": [
+      ["Cauterize", "70.75%"],
+      ["Haven", "43.84%"],
+      ["Rejuvenate", "37.45%"],
+      ["Chronos", "22.91%"],
+      ["Life Rip", "22.83%"]
+    ]
+  },
+  {
+    "name": "kinessa",
+    "role": "damage",
+    "alt": "Kinessa",
+    "talents": [
+      ["Steady Aim", "57.93%"],
+      ["Reposition", "35.66%"],
+      ["Eagle Eye", "6.41%"]
+    ],
+    "items": [
+      ["Cauterize", "61.59%"],
+      ["Life Rip", "37.43%"],
+      ["Haven", "36.83%"],
+      ["Kill to Heal", "32.29%"],
+      ["Nimble", "24.61%"]
+    ]
+  },
+  {
+    "name": "koga",
+    "role": "flank",
+    "alt": "Koga",
+    "talents": [
+      ["Adrenaline Junkie", "60.31%"],
+      ["Blood Reaper", "24.31%"],
+      ["Dragon Fangs", "15.38%"]
+    ],
+    "items": [
+      ["Cauterize", "66.62%"],
+      ["Life Rip", "60.1%"],
+      ["Kill to Heal", "39.44%"],
+      ["Nimble", "31.42%"],
+      ["Deft Hands", "28.96%"]
+    ]
+  },
+  {
+    "name": "lex",
+    "role": "flank",
+    "alt": "Lex",
+    "talents": [
+      ["Discovery", "60.25%"],
+      ["Heroism", "28.67%"],
+      ["Death Hastens", "11.08%"]
+    ],
+    "items": [
+      ["Cauterize", "59.8%"],
+      ["Kill to Heal", "42.23%"],
+      ["Life Rip", "41.46%"],
+      ["Haven", "33.86%"],
+      ["Nimble", "29.54%"]
+    ]
+  },
+  {
+    "name": "lian",
+    "role": "damage",
+    "alt": "Lian",
+    "talents": [
+      ["Alacrity", "47.4%"],
+      ["Eminence", "41.07%"],
+      ["Precision", "11.53%"]
+    ],
+    "items": [
+      ["Cauterize", "82%"],
+      ["Chronos", "41.07%"],
+      ["Life Rip", "37.45%"],
+      ["Haven", "30.67%"],
+      ["Kill to Heal", "26.49%"]
+    ]
+  },
+  {
+    "name": "maeve",
+    "role": "flank",
+    "alt": "Maeve",
+    "talents": [
+      ["Street Justice", "43.46%"],
+      ["Cat Burglar", "34.36%"],
+      ["Rogue's Gambit", "22.17%"]
+    ],
+    "items": [
+      ["Cauterize", "67.49%"],
+      ["Kill to Heal", "47.42%"],
+      ["Nimble", "40.85%"],
+      ["Chronos", "36.26%"],
+      ["Life Rip", "34.13%"]
+    ]
+  },
+  {
+    "name": "makoa",
+    "role": "frontline",
+    "alt": "Makoa",
+    "talents": [
+      ["Pluck", "57.95%"],
+      ["Half Shell", "31.84%"],
+      ["Leviathan", "10.21%"]
+    ],
+    "items": [
+      ["Cauterize", "51.26%"],
+      ["Chronos", "45.56%"],
+      ["Haven", "45.42%"],
+      ["Rejuvenate", "43.14%"],
+      ["Nimble", "18.59%"]
+    ]
+  },
+  {
+    "name": "mal-damba",
+    "role": "support",
+    "alt": "Mal'Damba",
+    "talents": [
+      ["Spirit's Chosen", "58.23%"],
+      ["Ripened Gourd", "24.06%"],
+      ["Wekono's Wrath", "17.71%"]
+    ],
+    "items": [
+      ["Chronos", "81.88%"],
+      ["Deft Hands", "51.91%"],
+      ["Nimble", "29.74%"],
+      ["Haven", "26.43%"],
+      ["Cauterize", "19.74%"]
+    ]
+  },
+  {
+    "name": "moji",
+    "role": "flank",
+    "alt": "Moji",
+    "talents": [
+      ["Boom Boom", "50.63%"],
+      ["Toot", "26.07%"],
+      ["Snack Attack", "23.31%"]
+    ],
+    "items": [
+      ["Cauterize", "75.54%"],
+      ["Life Rip", "58.45%"],
+      ["Nimble", "43.4%"],
+      ["Haven", "38.83%"],
+      ["Kill to Heal", "31.91%"]
+    ]
+  },
+  {
+    "name": "octavia",
+    "role": "damage",
+    "alt": "Octavia",
+    "talents": [
+      ["Hell or High Water", "38.32%"],
+      ["Display of Force", "34.81%"],
+      ["Asymmetric Warfare", "26.87%"]
+    ],
+    "items": [
+      ["Cauterize", "69.63%"],
+      ["Life Rip", "47.06%"],
+      ["Chronos", "32.05%"],
+      ["Haven", "31.72%"],
+      ["Morale Boost", "27.36%"]
+    ]
+  },
+  {
+    "name": "pip",
+    "role": "support",
+    "alt": "Pip",
+    "talents": [
+      ["Mega Potion", "49.02%"],
+      ["Combat Medic", "25.55%"],
+      ["Catalyst", "25.43%"]
+    ],
+    "items": [
+      ["Chronos", "61.64%"],
+      ["Cauterize", "45.75%"],
+      ["Haven", "31.51%"],
+      ["Nimble", "28.41%"],
+      ["Deft Hands", "24.78%"]
+    ]
+  },
+  {
+    "name": "raum",
+    "role": "frontline",
+    "alt": "Raum",
+    "talents": [
+      ["Earthsplitter", "52.65%"],
+      ["Enforcer", "30.98%"],
+      ["Subservience", "16.37%"]
+    ],
+    "items": [
+      ["Cauterize", "61.1%"],
+      ["Haven", "49.82%"],
+      ["Life Rip", "43.62%"],
+      ["Rejuvenate", "39.89%"],
+      ["Chronos", "35.88%"]
+    ]
+  },
+  {
+    "name": "rei",
+    "role": "support",
+    "alt": "Rei",
+    "talents": [
+      ["Extension", "71.9%"],
+      ["Restraint", "16.25%"],
+      ["Focus", "11.85%"]
+    ],
+    "items": [
+      ["Chronos", "81.35%"],
+      ["Nimble", "44.18%"],
+      ["Haven", "37.82%"],
+      ["Cauterize", "37.08%"],
+      ["Morale Boost", "30.72%"]
+    ]
+  },
+  {
+    "name": "ruckus",
+    "role": "frontline",
+    "alt": "Ruckus",
+    "talents": [
+      ["Flux Generator", "58.67%"],
+      ["Rocket Barrage", "27.24%"],
+      ["Aerial Assault", "14.09%"]
+    ],
+    "items": [
+      ["Cauterize", "53.45%"],
+      ["Haven", "44.3%"],
+      ["Life Rip", "42.1%"],
+      ["Chronos", "37.97%"],
+      ["Rejuvenate", "23.31%"]
+    ]
+  },
+  {
+    "name": "saati",
+    "role": "damage",
+    "alt": "Saati",
+    "talents": [
+      ["Improvised", "53.76%"],
+      ["Window of Opportunity", "35.01%"],
+      ["Heads or Tails", "11.24%"]
+    ],
+    "items": [
+      ["Cauterize", "83.55%"],
+      ["Life Rip", "43.45%"],
+      ["Nimble", "42.48%"],
+      ["Haven", "34.95%"],
+      ["Kill to Heal", "28.63%"]
+    ]
+  },
+  {
+    "name": "seris",
+    "role": "support",
+    "alt": "Seris",
+    "talents": [
+      ["Mortal Reach", "61.31%"],
+      ["Soul Collector", "25.65%"],
+      ["Agony", "13.04%"]
+    ],
+    "items": [
+      ["Chronos", "58.3%"],
+      ["Nimble", "53.6%"],
+      ["Haven", "41.05%"],
+      ["Cauterize", "35.8%"],
+      ["Kill to Heal", "21.39%"]
+    ]
+  },
+  {
+    "name": "sha-lin",
+    "role": "damage",
+    "alt": "Sha Lin",
+    "talents": [
+      ["Recurve", "41.49%"],
+      ["Sand Trap", "38.36%"],
+      ["Desert Silence", "20.15%"]
+    ],
+    "items": [
+      ["Cauterize", "77.44%"],
+      ["Nimble", "52.94%"],
+      ["Life Rip", "33.91%"],
+      ["Haven", "33.04%"],
+      ["Kill to Heal", "27.23%"]
+    ]
+  },
+  {
+    "name": "skye",
+    "role": "flank",
+    "alt": "Skye",
+    "talents": [
+      ["Debilitate", "61.96%"],
+      ["Preparation", "24.47%"],
+      ["Smoke and Dagger", "13.57%"]
+    ],
+    "items": [
+      ["Cauterize", "66.8%"],
+      ["Life Rip", "51.78%"],
+      ["Nimble", "49.64%"],
+      ["Kill to Heal", "28.76%"],
+      ["Chronos", "27.28%"]
+    ]
+  },
+  {
+    "name": "strix",
+    "role": "damage",
+    "alt": "Strix",
+    "talents": [
+      ["Nocturnal", "64.95%"],
+      ["Unauthorized Use", "17.69%"],
+      ["Crack Shot", "17.36%"]
+    ],
+    "items": [
+      ["Cauterize", "66.48%"],
+      ["Nimble", "46.07%"],
+      ["Life Rip", "31.8%"],
+      ["Haven", "31.16%"],
+      ["Kill to Heal", "29.64%"]
+    ]
+  },
+  {
+    "name": "talus",
+    "role": "flank",
+    "alt": "Talus",
+    "talents": [
+      ["Inner Strength", "65.55%"],
+      ["Faustian Bargain", "17.76%"],
+      ["Nothing Personal", "16.69%"]
+    ],
+    "items": [
+      ["Cauterize", "76.43%"],
+      ["Life Rip", "61.46%"],
+      ["Nimble", "43.98%"],
+      ["Haven", "28.38%"],
+      ["Chronos", "24.8%"]
+    ]
+  },
+  {
+    "name": "terminus",
+    "role": "frontline",
+    "alt": "Terminus",
+    "talents": [
+      ["Undying", "43.36%"],
+      ["Crush", "32.27%"],
+      ["Decimation", "24.37%"]
+    ],
+    "items": [
+      ["Nimble", "61.65%"],
+      ["Haven", "52.74%"],
+      ["Cauterize", "48.93%"],
+      ["Rejuvenate", "46.57%"],
+      ["Morale Boost", "21.12%"]
+    ]
+  },
+  {
+    "name": "tiberius",
+    "role": "damage",
+    "alt": "Tiberius",
+    "talents": [
+      ["Tigron's Fury", "41.19%"],
+      ["Predatory Instincts", "38.01%"],
+      ["Vicious Assault", "20.81%"]
+    ],
+    "items": [
+      ["Cauterize", "69.56%"],
+      ["Life Rip", "49.36%"],
+      ["Chronos", "30.82%"],
+      ["Haven", "29.13%"],
+      ["Kill to Heal", "27.85%"]
+    ]
+  },
+  {
+    "name": "torvald",
+    "role": "frontline",
+    "alt": "Torvald",
+    "talents": [
+      ["Thanks, Grandpa", "64.6%"],
+      ["Direct Current", "25.01%"],
+      ["Field Study", "10.38%"]
+    ],
+    "items": [
+      ["Chronos", "51.92%"],
+      ["Cauterize", "40.99%"],
+      ["Haven", "40.68%"],
+      ["Rejuvenate", "25.07%"],
+      ["Kill to Heal", "24.53%"]
+    ]
+  },
+  {
+    "name": "tyra",
+    "role": "damage",
+    "alt": "Tyra",
+    "talents": [
+      ["Burn, Monster!", "50.81%"],
+      ["Mercy Kill", "36.95%"],
+      ["Hunting Party", "12.24%"]
+    ],
+    "items": [
+      ["Cauterize", "73.72%"],
+      ["Life Rip", "54.02%"],
+      ["Nimble", "39.79%"],
+      ["Haven", "31.19%"],
+      ["Chronos", "24.81%"]
+    ]
+  },
+  {
+    "name": "vatu",
+    "role": "flank",
+    "alt": "Vatu",
+    "talents": [
+      ["Enveloping Shadows", "48.84%"],
+      ["Unerring", "27.29%"],
+      ["Omnipresence", "23.87%"]
+    ],
+    "items": [
+      ["Cauterize", "78.36%"],
+      ["Life Rip", "35.98%"],
+      ["Haven", "33.1%"],
+      ["Chronos", "31.84%"],
+      ["Kill to Heal", "31.35%"]
+    ]
+  },
+  {
+    "name": "viktor",
+    "role": "damage",
+    "alt": "Viktor",
+    "talents": [
+      ["Cardio", "67.43%"],
+      ["Burst Mode", "16.83%"],
+      ["Shrapnel", "15.74%"]
+    ],
+    "items": [
+      ["Cauterize", "58.5%"],
+      ["Life Rip", "54.23%"],
+      ["Morale Boost", "34.1%"],
+      ["Haven", "33.43%"],
+      ["Deft Hands", "24.39%"]
+    ]
+  },
+  {
+    "name": "vivian",
+    "role": "damage",
+    "alt": "Vivian",
+    "talents": [
+      ["Suspect Everyone", "43.92%"],
+      ["Booby Trap", "33.51%"],
+      ["Opportunity in Chaos", "22.57%"]
+    ],
+    "items": [
+      ["Cauterize", "55.37%"],
+      ["Life Rip", "55.11%"],
+      ["Morale Boost", "31.81%"],
+      ["Haven", "30.98%"],
+      ["Deft Hands", "24.53%"]
+    ]
+  },
+  {
+    "name": "vora",
+    "role": "flank",
+    "alt": "Vora",
+    "talents": [
+      ["Relentless Presence", "47.73%"],
+      ["Unyielding Pressure", "44.79%"],
+      ["Deafening Silence", "7.47%"]
+    ],
+    "items": [
+      ["Cauterize", "83.61%"],
+      ["Life Rip", "64.05%"],
+      ["Haven", "34.15%"],
+      ["Kill to Heal", "30.5%"],
+      ["Nimble", "28.48%"]
+    ]
+  },
+  {
+    "name": "willo",
+    "role": "damage",
+    "alt": "Willo",
+    "talents": [
+      ["Nightshade", "46.22%"],
+      ["Scorn", "33.33%"],
+      ["Blastflower", "20.45%"]
+    ],
+    "items": [
+      ["Cauterize", "76.08%"],
+      ["Chronos", "49.62%"],
+      ["Life Rip", "36.93%"],
+      ["Haven", "32.48%"],
+      ["Kill to Heal", "25.19%"]
+    ]
+  },
+  {
+    "name": "yagorath",
+    "role": "frontline",
+    "alt": "Yagorath",
+    "talents": [
+      ["Corrosive Acid", "52.95%"],
+      ["Unnatural Persistence", "33.22%"],
+      ["Sight Begets Strength", "13.84%"]
+    ],
+    "items": [
+      ["Haven", "63.77%"],
+      ["Cauterize", "62.72%"],
+      ["Rejuvenate", "54.72%"],
+      ["Life Rip", "31.85%"],
+      ["Chronos", "24.38%"]
+    ]
+  },
+  {
+    "name": "ying",
+    "role": "support",
+    "alt": "Ying",
+    "talents": [
+      ["Life Exchange", "39.7%"],
+      ["Focusing Lens", "33.67%"],
+      ["Resonance", "26.63%"]
+    ],
+    "items": [
+      ["Chronos", "70.56%"],
+      ["Morale Boost", "53.83%"],
+      ["Cauterize", "42.72%"],
+      ["Haven", "29.64%"],
+      ["Nimble", "22.98%"]
+    ]
+  },
+  {
+    "name": "zhin",
+    "role": "flank",
+    "alt": "Zhin",
+    "talents": [
+      ["Yomi", "45.04%"],
+      ["Guillotine", "37.12%"],
+      ["Smolder", "17.84%"]
+    ],
+    "items": [
+      ["Cauterize", "69.48%"],
+      ["Life Rip", "44.35%"],
+      ["Nimble", "31.66%"],
+      ["Haven", "31.08%"],
+      ["Kill to Heal", "30.69%"]
+    ]
+  }
+]}
