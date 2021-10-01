@@ -45,8 +45,17 @@ function randomizeChamp(arr) {
     let champ_json = arr[getRandomInt(arr.length)];
     let URL = "https://webcdn.hirezstudios.com/paladins/assets/carousel/{0}.png"
 
-    document.getElementById("p_test").innerHTML = champ_json["alt"];
+    // Animates the name as it gets modified.
+    let name_line = document.getElementById("p_test");
+    name_line.classList.remove('champ_name');
+    void name_line.offsetWidth;
+    name_line.innerHTML = champ_json["alt"];
+    name_line.classList.add('champ_name');
+
+    // Loads the correct image for the champion.
     document.getElementById("champ_image").src = String.format(URL, champ_json["name"]);
+    document.getElementById("talent_1").innerHTML = champ_json["talents"][0][0];
+    console.log(champ_json["talents"][0]);
 }
 
 /**
@@ -55,10 +64,9 @@ function randomizeChamp(arr) {
  */
 function getChamps() {
     $().ready(function() {
-        $.getJSON( "src/data/champs.json", function(data) {
+        $.getJSON( "src/data/champ_data.json", function(data) {
             let arr = data["champs"];
             randomizeChamp(arr);
-            //$("#text").html("<i>"+arr[getRandomInt(arr.length)]["alt"]+"</i>");
         });
     });
 }
