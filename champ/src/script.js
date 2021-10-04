@@ -44,6 +44,7 @@ if (!String.format) {
 function randomizeChamp(arr) {
     let champ_json = arr[getRandomInt(arr.length)];
     let URL = "https://webcdn.hirezstudios.com/paladins/assets/carousel/{0}.png"
+    let URL_2 = "https://webcdn.hirezstudios.com/paladins/champion-headers/{0}.png"
 
     // Animates the name as it gets modified.
     let name_line = document.getElementById("p_test");
@@ -53,9 +54,12 @@ function randomizeChamp(arr) {
     name_line.classList.add('champ_name');
 
     // Loads the correct image for the champion.
+    document.getElementById("champ_image_2").src = String.format(URL_2, champ_json["name"]);
     document.getElementById("champ_image").src = String.format(URL, champ_json["name"]);
+
     document.getElementById("talent_1").innerHTML = champ_json["talents"][0][0];
-    console.log(champ_json["talents"][0]);
+    //console.log(champ_json["talents"][0]);
+    loadItems(champ_json);
 }
 
 /**
@@ -70,3 +74,21 @@ function getChamps() {
         });
     });
 }
+
+/**
+ * Updates the side items bar.
+ * @param champ_json contains the champ data.
+ */
+function loadItems(champ_json) {
+    for(let i = 0; i < 5; ++i) {
+        let item_name = champ_json['items'][i][0];
+        let item_pctg = champ_json['items'][i][1];
+        let item_icon_filename = String.format("res/items/{0}.png", item_name.toLowerCase().replaceAll(' ', ''));
+        //console.log(String.format("{0} : {1}", item_name, item_pctg));
+        //console.log(item_name.toLowerCase().replace(' ', '') + ".png");
+        document.getElementById(String.format('item_{0}_icon', i+1)).src = item_icon_filename;
+        document.getElementById(String.format('item_{0}_name', i+1)).innerText = item_name;
+        document.getElementById(String.format('item_{0}_usage', i+1)).innerText = item_pctg;
+    }
+}
+
