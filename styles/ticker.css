@@ -26,7 +26,7 @@
     }
 }
 
-/************ Ticker Styling ************/
+/************ Ticker Styling ***********/
 @media only screen and (max-width: 1000px) {
     .ticker_wrap { visibility: hidden; }
 }
@@ -34,7 +34,6 @@
     max-width: 100%;
     overflow: hidden;
     box-sizing: content-box;
-    border-style: solid none;
 }
 .ticker {
     display: inline-block;
@@ -54,3 +53,27 @@
     font-size: 18px;
     color: rgb(60,60,60);
 }
+
+
+/*
+.ticker_wrap {
+    overflow: hidden;
+    background: inherit;
+}
+.ticker {
+    display: flex;
+}
+.ticker_item {
+    flex-shrink: 0;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+    text-align: center;
+}
+@keyframes tickerr {
+    0%  { transform: translate3d(100%, 0, 0); }
+    100%{ transform: translate3d(-600%, 0, 0);}
+}
+.ticker {
+    animation: tickerr linear 15s infinite;
+}*/
