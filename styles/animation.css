@@ -1,7 +1,7 @@
-/*
+/*********************************************
     Animates the Paladins Champ Picker cards.
         - Dan Bauer (2021)
-*/
+ *********************************************/
 @-webkit-keyframes cf4FadeInOut {
     0%   { opacity: 1; }
     17%  { opacity: 1; }
@@ -9,7 +9,6 @@
     92%  { opacity: 0; }
     100% { opacity: 1; }
 }
-
 @-moz-keyframes cf4FadeInOut {
     0%   { opacity: 1; }
     17%  { opacity: 1; }
@@ -17,7 +16,6 @@
     92%  { opacity: 0; }
     100% { opacity: 1; }
 }
-
 @-o-keyframes cf4FadeInOut {
     0%   { opacity: 1; }
     17%  { opacity: 1; }
@@ -25,7 +23,6 @@
     92%  { opacity: 0; }
     100% { opacity: 1; }
 }
-
 @keyframes cf4FadeInOut {
     0%   { opacity: 1; }
     17%  { opacity: 1; }
@@ -33,28 +30,47 @@
     92%  { opacity: 0; }
     100% { opacity: 1; }
 }
-
-#cf4a {
-    /*position: relative;*/
-    width: 400px;
-    /*height:;
-    width:450px;*/
-    margin:0 auto;
-    background: inherit;
+@media only screen and (min-width: 1000px) {
+    #cf4a {
+        width: 33%;
+        margin: 0;
+        background: inherit;
+    }
+    #cf4a img {
+        left: 8%;
+        width: 33%;
+    }
+}
+@media only screen and (max-width: 1000px) {
+    #cf4a {
+        width: 100%;
+        margin: 0;
+        background: inherit;
+    }
+    #cf4a img {
+        left: 5%;
+        width: 90%;
+    }
 }
 
 #cf4a img {
     color: darkcyan;
     position: absolute;
-    left: 8%;
+
+    display: flex;
+    align-items: center;
+
+
+    /*top: 4.6rem;*/
+    /*bottom: 5%;*/
+    /*left: 8%;
     max-width: 100%;
-    width: 33%;
+    width: 33%;*/
     height: auto;
     vertical-align: middle;
     border: solid 3px;
     border-radius: 20px;
     -ms-interpolation-mode: bicubic;
-
 
     -webkit-animation-name: cf4FadeInOut;
     -webkit-animation-timing-function: ease-in-out;

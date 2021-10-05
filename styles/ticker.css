@@ -27,14 +27,18 @@
 }
 
 /************ Ticker Styling ************/
+@media only screen and (max-width: 1000px) {
+    .ticker_wrap { visibility: hidden; }
+}
 .ticker_wrap {
     max-width: 100%;
     overflow: hidden;
     box-sizing: content-box;
-
+    border-style: solid none;
 }
 .ticker {
     display: inline-block;
+    visibility: inherit;
     overflow: hidden;
     white-space: nowrap;
     box-sizing: content-box;
@@ -44,6 +48,7 @@
 }
 .ticker_item {
     display: inline-block;
+    visibility: inherit;
     height: 2em;
     padding: 0 3rem;
     font-size: 18px;
