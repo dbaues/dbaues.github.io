@@ -57,9 +57,9 @@ function randomizeChamp(arr) {
     document.getElementById("champ_image_2").src = String.format(URL_2, champ_json["name"]);
     document.getElementById("champ_image").src = String.format(URL, champ_json["name"]);
 
-    document.getElementById("talent_1").innerHTML = champ_json["talents"][0][0];
-    //console.log(champ_json["talents"][0]);
+    //document.getElementById("talent_1").innerHTML = champ_json["talents"][0][0];
     loadItems(champ_json);
+    loadTalents(champ_json);
 }
 
 /**
@@ -89,6 +89,19 @@ function loadItems(champ_json) {
         document.getElementById(String.format('item_{0}_icon', i+1)).src = item_icon_filename;
         document.getElementById(String.format('item_{0}_name', i+1)).innerText = item_name;
         document.getElementById(String.format('item_{0}_usage', i+1)).innerText = item_pctg;
+    }
+}
+
+function loadTalents(champ_json) {
+    for(let i = 0; i < 3; ++i) {
+        let talent_name = champ_json['talents'][i][0];
+        let talent_pctg = champ_json['talents'][i][1];
+        let talent_png_filename = String.format("res/talents/{0}_{1}.png", champ_json['name'].replaceAll('-',''),
+            talent_name.toLowerCase().replaceAll("!", '').replaceAll(" ",'').replaceAll('.','').replaceAll(',','').replaceAll("'",''));
+
+        document.getElementById(String.format('talent_{0}_icon', i+1)).src = talent_png_filename;
+        document.getElementById(String.format('talent_{0}_name', i+1)).innerText = talent_name;
+        document.getElementById(String.format('talent_{0}_usage', i+1)).innerText = talent_pctg;
     }
 }
 

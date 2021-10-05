@@ -4,6 +4,7 @@
         <meta charset="UTF-8">
         <meta name="author" content="Dan Bauer">
         <meta name="description" content="Random Champion Picker">
+        <meta name="viewport" content="">
         <title>Paladins Champion Picker</title>
         <link rel="stylesheet" href="../styles/style.css">
         <link rel="stylesheet" href="../styles/header.css">
@@ -11,8 +12,15 @@
         <link rel="stylesheet" href="../styles/footer.css">
         <link rel="stylesheet" href="../styles/background.css">
         <link rel="stylesheet" href="styles/style.css">
+        <link rel="stylesheet" href="styles/select.css">
         <link rel="icon" href="../res/gh_icon.png">
         <link rel="stylesheet" id="leven-google-fonts-css" href="https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic" type="text/css" media="all">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Russo+One&display=swap" rel="stylesheet">
+
+        <link rel="preconnect" href="https://webcdn.hirezstudios.com/paladins/">
         <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
         <script src="src/script.js"></script>
     </head>
@@ -49,9 +57,9 @@
                 <div class="header_section nav" id="page_nav">
                     <!-- Buttons Section across the top. -->
                     <ol>
-                        <li><a href="tmp.html">About</a></li>
-                        <li><a href="tmp.html">Resume</a></li>
-                        <li><a href="tmp.html">Contact</a></li>
+                        <li><a href="../tmp.html">About</a></li>
+                        <li><a href="../tmp.html">Resume</a></li>
+                        <li><a href="../tmp.html">Contact</a></li>
                         <li><a target="_blank" href="https://github.com/dbaues">Github</a></li>
                     </ol>
                 </div>
@@ -61,19 +69,135 @@
         <br>
         <!-- Content section -->
         <div class="content_container">
-            <div class="main2">
-                <h3>Paladins Champion Picker [Version 2.1]</h3>
-            </div>
-            <div class="dl_link">
-                <button class="btn" onclick="getChamps()">Get Random</button>
+            <div class="dark_glass pcp_header">
+                <div class="main2" style="text-align: center;">
+                    <div class="title_header">
+                        <h3>Paladins Champion Picker</h3>
+                        <p>Version: <span id="version_no">3.0</span></p>
+                    </div>
+                </div>
+                <div style="text-align: center">
+                    <div class="role_options">
+                        <div class="role_select" id="left_end_rs">
+                            <label class="container">
+                                <img alt="" src="https://childishgiant.github.io/paladins-randomiser/imgs/Support.svg" height="20px">
+                                Support
+                                <input type="checkbox" checked="checked">
+                            <!--<span class="checkmark"></span>-->
+                            </label>
+                        </div>
+                        <div class="role_select">
+                            <label class="container">
+                                <img alt="" src="https://childishgiant.github.io/paladins-randomiser/imgs/Damage.svg" height="20px">
+                                Damage
+                                <input type="checkbox">
+                                <!--<span class="checkmark"></span>-->
+                            </label>
+                        </div>
+                        <div class="role_select">
+                           <button id="randomize_btn" class="btn" onclick="getChamps();">Get Random</button>
+                       </div>
+                        <div class="role_select">
+                            <label class="container">
+                                <img alt="" src="https://childishgiant.github.io/paladins-randomiser/imgs/Flank.svg" height="20px">
+                                Flank
+                                <input type="checkbox">
+                                <!--<span class="checkmark"></span>-->
+                            </label>
+                        </div>
+                        <div class="role_select" id="right_end_rs">
+                            <label class="container">
+                                <img alt="" src="https://childishgiant.github.io/paladins-randomiser/imgs/Frontlines.svg" height="20px">
+                                Frontline
+                                <input type="checkbox">
+                                <!--<span class="checkmark"></span>-->
+                            </label>
+                        </div>
+                    </div>
+                </div>
             </div>
             <div class="champ_gen" style="text-align: center">
-                <p id="p_test" style="text-align: center">&nbsp;</p>
-                <img alt="Champion Icon" id="champ_image" src="res/champion%20icons/androxus.jpg">
+                <div class="dark_glass name_bar" id="champ_name_background">
+                    <!--<div class="name_section"></div>-->
+                    <div><p id="p_test" class="champ_name" style="text-align: center">Paladins</p></div>
+                    <div class="name_section">
+                        <img id="champ_image_2" src="https://webcdn.hirezstudios.com/paladins/champion-headers/corvus.png" alt="">
+                    </div>
+                </div>
+                <div class="champ_content">
+                    <div class="champ_content_section dark_glass champ_content_sidebar">
+                        <div id="talents">
+                            <div class="dark_glass talent_section">
+                                <img id="talent_1_icon" src="res/talents/corvus_spreadinginfluence.png" alt="">
+                                <div class="talent_details">
+                                    <h5 id="talent_1_name"></h5>
+                                    <span id="talent_1_usage"></span>
+                                </div>
+                            </div>
+                            <div class="dark_glass talent_section">
+                                <img id="talent_2_icon" src="res/talents/corvus_darkgifts.png" alt="">
+                                <div class="talent_details">
+                                    <h5 id="talent_2_name"></h5>
+                                    <span id="talent_2_usage"></span>
+                                </div>
+                            </div>
+                            <div class="dark_glass talent_section">
+                                <img id="talent_3_icon" src="res/talents/corvus_stunningvisage.png" alt="">
+                                <div class="talent_details">
+                                    <h5 id="talent_3_name"></h5>
+                                    <span id="talent_3_usage"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="champ_content_section">
+                        <img alt="Champion Icon" id="champ_image" src="res/paladins_logo.png">
+                    </div>
+                    <!-- Items per champion -->
+                    <div class="champ_content_section dark_glass champ_content_sidebar">
+                        <div id="items">
+                            <div class="dark_glass item_section">
+                                <img id="item_1_icon" src="res/items/chronos.png" alt="">
+                                <div class="item_details">
+                                    <h5 id="item_1_name"></h5>
+                                    <span id="item_1_usage"></span>
+                                </div>
+                            </div>
+                            <div class="dark_glass item_section">
+                                <img id="item_2_icon" src="res/items/cauterize.png" alt="">
+                                <div class="item_details">
+                                    <h5 id="item_2_name"></h5>
+                                    <span id="item_2_usage">&nbsp;</span>
+                                </div>
+                            </div>
+                            <div class="dark_glass item_section">
+                                <img id="item_3_icon" src="res/items/nimble.png" alt="">
+                                <div class="item_details">
+                                    <h5 id="item_3_name"></h5>
+                                    <span id="item_3_usage">&nbsp;</span>
+                                </div>
+                            </div>
+                            <div class="dark_glass item_section">
+                                <img id="item_4_icon" src="res/items/liferip.png" alt="">
+                                <div class="item_details">
+                                    <h5 id="item_4_name"></h5>
+                                    <span id="item_4_usage">&nbsp;</span>
+                                </div>
+                            </div>
+                            <div class="dark_glass item_section">
+                                <img id="item_5_icon" src="res/items/veteran.png" alt="">
+                                <div class="item_details">
+                                    <h5 id="item_5_name"></h5>
+                                    <span id="item_5_usage">&nbsp;</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
 
-
             <a href="https://childishgiant.github.io/paladins-randomiser/" target="_blank">Similar Project</a>
+            <p id="talent_1">&nbsp;</p>
             <!-- https://childishgiant.github.io/paladins-randomiser/imgs/Damage.svg -->
         </div>
         <br>
@@ -87,7 +211,7 @@
                     </a>
                 </div>
                 <div class="footer_div" id="f_div_mid">
-                    <a href="tmp.html">
+                    <a href="../tmp.html">
                         Created by Dan Bauer.
                     </a>
                 </div>

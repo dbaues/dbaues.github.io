@@ -1,6 +1,33 @@
 
+/**************** DEBUGGER ************************/
+#champ_image {
+    /*outline: 2px solid darkgoldenrod;
+}
+div {
+    /*outline: 2px solid red;*/
+}
 
-/*********** Paladins Champ Picker Styles *********/
+/*********** Paladins Champ Picker Styles ************/
+/************* PCP Header Styles *********************/
+.dark_glass {
+    padding: 10px;
+    border: 3px solid #454545;
+    border-radius: 20px 5px 20px 5px;
+    backdrop-filter: blur(10em);
+    box-shadow: -2px -2px 0 darkcyan, 2px 2px 0 darkcyan;
+}
+.pcp_header {
+    margin: 25px 8%;
+}
+#champ_name_background {
+    margin: 25px 15%;
+}
+h3 {
+    font-size: 200%;
+    font-family: "Monsterrat", sans-serif;
+    color: #353535;
+    text-shadow: 1px 1px 0 cyan, -1px -1px 0 white;
+}
 .btn {
     background-color: #5b85c9;
     border: none;
@@ -12,7 +39,149 @@
     margin: 4px 2px;
     cursor: pointer;
     border-radius: 16px;
+    z-index: -2;
+}
+/*************** Champion Name Styles ****************/
+.name_section {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 40px;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    border-bottom-right-radius: inherit;
+}
+.name_section img {
+    position: absolute;
+    z-index: 11;
+    right: 0;
+    top: 0;
+    height: inherit;
+    border-bottom-right-radius: inherit;
+}
+.champ_name {
+    font-size: 150%;
+    font-family: 'Orbitron', sans-serif;
+    overflow: hidden;
+    white-space: nowrap;
+    margin: 10px auto;
+    letter-spacing: .15em;
+    text-shadow: 1px 1px 0 cyan;
+    animation: typing 6s steps(60, end);
+}
+@keyframes typing {
+    from { width:   0;  }
+    to   { width: 100%; }
+}
+/************ Random Champ's Data Styles *************/
+.champ_content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 0 8%;
+}
+.champ_content_section {
+    height: 500px;
+    width: 100%;
+    margin: 10px 10px;
+    display: flex;
+    justify-content: center;
 }
 #champ_image {
     height: 500px;
+    position: absolute;
+    z-index: 40;
+}
+
+.champ_content_sidebar {
+    width: 25%;
+    margin: 0;
+}
+/************* Item sidebar Styles *************/
+#items {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.item_section {
+    flex: inherit;
+    height: 15%;
+    padding: 5px;
+    background: rgba(45,45,45,.5);
+}
+.item_section img {
+    height: 90%;
+    border-top-left-radius: inherit;
+    border-bottom-right-radius: inherit;
+    border: 3px solid black;
+}
+.item_details, .talent_details{
+    border-top-left-radius: inherit;
+    border-bottom-right-radius: inherit;
+    position: absolute;
+    inset: 0;
+    background: rgba(45, 45, 45, 0.72);
+    color: white;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity .2s, visibility .2s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.item_details h5 {
+    font-family: 'Orbitron', sans-serif;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.item_details span {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 80%;
+    position: absolute;
+    bottom: 2%;
+
+}
+.item_section:hover .item_details {
+    visibility: visible;
+    opacity: 1;
+    border: 3px solid cyan;
+}
+/*********** Talent Sidebar Styles ***********/
+#talents {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.talent_section {
+    flex: inherit;
+    height: 25%;
+    padding: 5px;
+    background: rgba(45, 45, 45, .5);
+}
+.talent_section img {
+    height: 95%;
+    width: 95%;
+    border-top-left-radius: inherit;
+    border-bottom-right-radius: inherit;
+    border: 3px solid black;
+}
+.talent_details h5 {
+    font-family: 'Orbitron', sans-serif;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.talent_details span {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 80%;
+    position: absolute;
+    bottom: 2%;
+
+}
+.talent_section:hover .talent_details {
+    visibility: visible;
+    opacity: 1;
+    border: 3px solid cyan;
 }
