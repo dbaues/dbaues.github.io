@@ -1,12 +1,8 @@
 
 /**************** DEBUGGER ************************/
-#champ_image {
-    /*outline: 2px solid darkgoldenrod;
-}
 div {
     /*outline: 2px solid red;*/
 }
-
 /*********** Paladins Champ Picker Styles ************/
 /************* PCP Header Styles *********************/
 .dark_glass {
@@ -18,6 +14,9 @@ div {
 }
 .pcp_header {
     margin: 25px 8%;
+}
+#version_no {
+    font-family: 'Orbitron', sans-serif;
 }
 #champ_name_background {
     margin: 25px 15%;
@@ -41,6 +40,7 @@ h3 {
     border-radius: 16px;
     z-index: -2;
 }
+
 /*************** Champion Name Styles ****************/
 .name_section {
     position: absolute;
@@ -74,6 +74,7 @@ h3 {
     from { width:   0;  }
     to   { width: 100%; }
 }
+
 /************ Random Champ's Data Styles *************/
 .champ_content {
     display: flex;
@@ -93,28 +94,36 @@ h3 {
     position: absolute;
     z-index: 40;
 }
-
+/******************* Sidebar Styles ******************/
 .champ_content_sidebar {
     width: 25%;
     margin: 0;
 }
-/************* Item sidebar Styles *************/
-#items {
+@media only screen and (min-width: 1200px){
+    #items, #talents {
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .item_section { height: 15%; }
+    .talent_section { height: 25%; }
+}
+@media only screen and (max-width: 1200px){
+    .champ_content {
+        flex-direction: column;
+    }
+    #items, #talents { flex-direction: row; }
+    .champ_content_sidebar {
+        width: 95%;
+        height: 120px;
+    }
+    .talent_section, .item_section {
+        height: 80%;
+        margin: 0 5px;
+        justify-content: space-around;
+    }
+}
+#items, #talents {
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-.item_section {
-    flex: inherit;
-    height: 15%;
-    padding: 5px;
-    background: rgba(45,45,45,.5);
-}
-.item_section img {
-    height: 90%;
-    border-top-left-radius: inherit;
-    border-bottom-right-radius: inherit;
-    border: 3px solid black;
 }
 .item_details, .talent_details{
     border-top-left-radius: inherit;
@@ -129,6 +138,19 @@ h3 {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+/************** Item Sidebar Styles ***********/
+.item_section {
+    flex: inherit;
+    /*height: 15%;*/
+    padding: 5px;
+    background: rgba(45,45,45,.5);
+}
+.item_section img {
+    height: 90%;
+    border-top-left-radius: inherit;
+    border-bottom-right-radius: inherit;
+    border: 3px solid black;
 }
 .item_details h5 {
     font-family: 'Orbitron', sans-serif;
@@ -148,15 +170,11 @@ h3 {
     opacity: 1;
     border: 3px solid cyan;
 }
+
 /*********** Talent Sidebar Styles ***********/
-#talents {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
 .talent_section {
     flex: inherit;
-    height: 25%;
+    /*height: 25%;*/
     padding: 5px;
     background: rgba(45, 45, 45, .5);
 }

@@ -53,9 +53,15 @@ function randomizeChamp(arr) {
     name_line.innerHTML = champ_json["alt"];
     name_line.classList.add('champ_name');
 
+    let tmp_name = "";
+    if(champ_json["name"] === "mal-damba")
+        tmp_name = "maldamba";
+    else
+        tmp_name = champ_json['name'];
+
     // Loads the correct image for the champion.
     document.getElementById("champ_image_2").src = String.format(URL_2, champ_json["name"]);
-    document.getElementById("champ_image").src = String.format(URL, champ_json["name"]);
+    document.getElementById("champ_image").src = String.format(URL, tmp_name);
 
     //document.getElementById("talent_1").innerHTML = champ_json["talents"][0][0];
     loadItems(champ_json);
