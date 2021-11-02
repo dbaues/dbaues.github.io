@@ -34,6 +34,8 @@
     max-width: 100%;
     overflow: hidden;
     box-sizing: content-box;
+    padding-top: 20px;
+    padding-bottom: 0;
 }
 .ticker {
     display: inline-block;
@@ -52,6 +54,7 @@
     padding: 0 3rem;
     font-size: 18px;
     color: rgb(60,60,60);
+    border: 2px solid initial;
 }
 
 
