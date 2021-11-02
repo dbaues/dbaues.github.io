@@ -34,18 +34,19 @@
                     </a>
                 </div>
                 <div class="header_section ticker_wrap">
-                    <script>Marquee3k.init();</script>
+                    <a href="#News" style="text-decoration: none">
                     <div class="ticker">
                         <!-- Ticker news items -->
-                        <div class="ticker_item">Paladins Champ Picker Version 2 out now!</div>
+                        <div class="ticker_item">Paladins Champ Picker Version 3 out now!</div>
                         <div class="ticker_item">Dan Bauer - &copy; 2021</div>
                         <div class="ticker_item">Hosted with Github Pages</div>
 
-                        <div class="ticker_item">Paladins Champ Picker Version 2 out now!</div>
+                        <div class="ticker_item">Paladins Champ Picker Version 3 out now!</div>
                         <div class="ticker_item">Dan Bauer - &copy; 2021</div>
                         <div class="ticker_item">Hosted With Github Pages</div>
                         <!-- Ticker news items need the repeat -->
                     </div>
+                    </a>
                 </div>
                 <div class="header_section nav" id="page_nav">
                     <!-- Buttons Section across the top. -->
@@ -62,46 +63,71 @@
         <!-- Main Section of Page. -->
         <div class="content_container">
             <main>
-                <h1>News!</h1>
-                <hr class="news_line">
-                <div class="grid">
-                    <br>
-                    <!--<div class="new_content" id="about_me">
-                        <a href="#" style="margin:0; padding:0;">
-                            <div id="am_link">
-                                <h2>About Me</h2>
+                <br>
+                <!-- Brief Intro. -->
+                <div class="new_content" id="about_me">
+                    <div class="news_content" ><a href="db.html">
+                        <h2 style="float: left; width: 50%;">About Me</h2>
+                            <div class="content_grid about_me" id="my_headshot">
+                                <img src="res/profile.jpg" alt="me, myself, and I." id="profile_pic">
                             </div>
-                        </a>
-                    </div>
-                    <br>-->
-                    <div class="new_content" id="paladins_champ">
-                        <a href="champ" style="margin:0; padding:0; text-decoration: none; z-index: 3">
-                            <h2>Paladins Random Champion Picker [BETA]</h2>
-                            <div id="pcp_link" style="z-index: 3;">
-                                <div class="content_grid" id="champ_splash_art">
-                                    <div id="cf4a">
-                                        <!-- Fades in/out the following champion splash arts. -->
-                                        <img src="res/Champion%20Spash%20Screen/Corvus_SplashArt.jpg" alt="Paladins Champions">
-                                        <img src="res/Champion%20Spash%20Screen/Vora_SplashArt.jpg" alt="Paladins Champions">
-                                        <img src="res/Champion%20Spash%20Screen/Furia_SplashArt.jpg" alt="Paladins Champions">
-                                        <img src="res/Champion%20Spash%20Screen/Vatu_SplashArt.jpg" alt="Paladins Champions">
-                                    </div>
-                                </div>
-                                <div class="content_grid news_description" id="pcp_desc">
-                                    <h3>Introducing the brand new, Paladins Champion Picker</h3>
-                                    <hr style="color: darkcyan;"><br>
-                                    <p>
-                                        Have you ever launched yourself into your 12th game of the night and not know which champion you want to play? Look no further. This new tool provides these players who play this game way too much, a way to decide which champion they should play. The picker now lists the best items and talents for each champion and <!--Now including role based selections.-->
-                                        includes all current champions of the game.
-                                    </p>
-                                    <br>
-                                    <p>Version 3 out now!</p>
-                                </div>
+                            <div class="content_grid news_description about_me" id="portfolio">
+                                <p>
+                                    <span style="font-size: 115%;">Hello there!</span>
+                                    <br><br>
+                                    My name is Daniel Bauer. I am currently a student at Dakota State University studying Computer Science. This site represents what I have learned and that which I am still learning on my trail to becoming a full-stack developer.
+                                    <br><br>
+                                    Welcome to my portfolio! :)
+                                </p>
                             </div>
-                        </a>
-                    </div>
-                    <br>
+                    </a></div>
                 </div>
+                <br>
+                <!-- News Items Section -->
+                <h1 id="News">News!</h1>
+                <hr class="news_line">
+                <br>
+                <div class="new_content" id="new_site">
+                    <div class="news_content"><a href="https://www.dbaues.dev">
+                        <div style="z-index: 3">
+                            <h2>New Domain!</h2>
+                            <div class="news_description content_grid">
+                                <p>
+                                    dbaues.github.io is moving!!! Starting November 2021, this site will be co hosted on both Github Pages as well as on my new Apache server. By 2022, The entirety of this site will be hosted at the new server. Big things are coming. As of writing, the self-hosted site is in a developmental state.
+                                </p><br><p>
+                                The site will continue to be accessible from here as well as at <span style="color: darkgrey">dbaues.dev</span>.</p>
+                            </div>
+                        </div>
+                    </a></div>
+                </div>
+                <br>
+                <div class="new_content" id="paladins_champ">
+                    <div class="news_content"><a href="champ">
+                        <h2>Paladins Random Champion Picker [BETA]</h2>
+                        <div id="pcp_link" style="z-index: 3;">
+                            <div class="content_grid" id="champ_splash_art">
+                                <div id="cf4a">
+                                    <!-- Fades in/out the following champion splash arts. -->
+                                    <img src="res/Champion%20Spash%20Screen/Corvus_SplashArt.jpg" alt="Paladins champions">
+                                    <img src="res/Champion%20Spash%20Screen/Vora_SplashArt.jpg" alt="Paladins Champions">
+                                    <img src="res/Champion%20Spash%20Screen/Furia_SplashArt.jpg" alt="Paladins Champions">
+                                    <img src="res/Champion%20Spash%20Screen/Vatu_SplashArt.jpg" alt="Paladins Champions">
+                                </div>
+                            </div>
+                            <div class="content_grid news_description" id="pcp_desc">
+                                <h3>Introducing the brand new, Paladins Champion Picker</h3>
+                                <hr style="color: darkcyan;"><br>
+                                <p>
+                                    Have you ever launched yourself into your 12th game of the night and not know which champion you want to play? Look no further. This new tool provides these players who play this game way too much, a way to decide which champion they should play. The picker now lists the best items and talents for each champion and <!--Now including role based selections.-->
+                                    includes all current champions of the game.
+                                </p>
+                                <br>
+                                <p>Version 3.1 out now!</p>
+                            </div>
+                        </div>
+                    </a></div>
+                </div>
+                <br>
             </main>
         </div>
         <br>
